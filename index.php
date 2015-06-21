@@ -22,7 +22,21 @@
 <a href="/"><img src="images/logo-white.png" alt="John Harding Jr's Portfolio"></a>
 </header>
 <section class="jh-section highlight-section">
-
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div>
+					<h1>Front End Engineer/Developer</h1>
+					<h3>7 Years Practical Experience</h3>
+					<h3>1.75 Years Personal Work Experience</h3>
+					<h3>7 Months Work Experience</h3>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img src="images/tool.png" alt="Key Words">
+			</div>
+		</div>
+	</div>
 </section>
 <section class="jh-section">
 	<div class="container">
@@ -47,6 +61,6 @@
 		</div>
 	</div>
 </section>
-
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
