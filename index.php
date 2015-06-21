@@ -21,15 +21,23 @@
     <![endif]-->
 </head>
 <body>
-<header>
-<a href="/"><img src="images/logo-white.png" alt="John Harding Jr's Portfolio"></a>
+<header id="jh-top">
+	<a href="/"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
+	<nav>
+		<ul>
+			<li><a href="">Resume</a></li>
+			<li><a href="">Stackoverlow <span class="link-external-blue"></span></a></li>
+			<li><a href="">Github <span class="link-external-blue"></span></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</nav>
 </header>
 <section class="jh-section highlight-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="outer-exp-display">
-					<h1>Front End Engineer/Developer</h1>
+					<h1>Front End Engineer</h1>
 					<h3><i class="fa fa-check-circle-o"></i> 7 Years Practical Experience</h3>
 					<h3><i class="fa fa-check-circle-o"></i> 1.75 Years Personal Work Experience</h3>
 					<h3><i class="fa fa-check-circle-o"></i> 7 Months Work Experience</h3>
@@ -46,8 +54,8 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section">
-	<div class="container">
+<section class="jh-section" id="section-0">
+	<div class="container" id="section-0-show">
 		<div class="row">
 			<div class="col-lg-6">
 				<h1>Created a New Social Network. From Scratch.</h1>
@@ -57,14 +65,27 @@
 					or the category it was posted in.  I moved on from this project in November of 2014 when I accepted a position with Qualtrics.
 				</p>
 				<p>
-					<a href="">Most recent version (preview)</a>
-				</P>
+					Most recent version (preview):<br />
+					<a href="">Improved Feed</a> - <a href="">New Create Accounts Page</a> - <a href="">New Developer Page</a>
+				</p>
 				<p>
-					<a href="http://www.repfive.com/login.php" targe="_blank">Current Version (RepFive.com)</a>Username:<strong>demo</strong> Password:<strong>repfive</strong>
+					<a href="http://www.repfive.com/login.php" target="_blank"><strong>Current Version (RepFive.com)</strong></a>
+					<br />
+					Username: <strong>demo</strong> Password: <strong>repfive</strong>
 				</P>
 			</div>
 			<div class="col-lg-6">
 				<img src="images/screen_repfive.png" alt="RepFive">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="jh-section jh-section-grey" id="section-1">
+	<div class="container" id="section-1-show">
+		<div class="row">
+			<div class="col-lg-6">
+			</div>
+			<div class="col-lg-6">
 			</div>
 		</div>
 	</div>
