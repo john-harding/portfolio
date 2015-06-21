@@ -11,6 +11,9 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
  <!-- HTML5 Shim and Respond.js -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -25,15 +28,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<div>
+				<div class="outer-exp-display">
 					<h1>Front End Engineer/Developer</h1>
-					<h3>7 Years Practical Experience</h3>
-					<h3>1.75 Years Personal Work Experience</h3>
-					<h3>7 Months Work Experience</h3>
+					<h3><i class="fa fa-check-circle-o"></i> 7 Years Practical Experience</h3>
+					<h3><i class="fa fa-check-circle-o"></i> 1.75 Years Personal Work Experience</h3>
+					<h3><i class="fa fa-check-circle-o"></i> 7 Months Work Experience</h3>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<img src="images/tool.png" alt="Key Words">
+			<div class="col-lg-6" id="highlight-images">
+				<img src="images/tool.png" class="tool-image" alt="Key Words">
+				<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
+				<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
+				<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
+				<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
+				<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes Preview">
 			</div>
 		</div>
 	</div>

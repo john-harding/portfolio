@@ -42,11 +42,11 @@ body .jh-section p {
   line-height: 25px;
 }
 body .jh-section.highlight-section {
-  height: 700px;
+  height: 800px;
   min-height: 600px;
   background: #000;
   background-image: radial-gradient(1500px at 0 0, #002244 0%, #002884 50%, #7722aa 100%);
-  text-align: right;
+  text-align: left;
 }
 body .jh-section.highlight-section .container {
   height: 100%;
@@ -59,21 +59,46 @@ body .jh-section.highlight-section .container .row div:first-child {
   top: 50%;
   height: 200px;
 }
-body .jh-section.highlight-section .container .row div:first-child > div {
+body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
   position: relative;
+  float: right;
   top: -55%;
+  max-width: 550px;
 }
-body .jh-section.highlight-section .container .row div:first-child > div h1 {
+body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1 {
+  margin: 0 0 20px;
   color: #FFF;
+  font-size: 40px;
   text-transform: none;
 }
-body .jh-section.highlight-section .container .row div:first-child > div h3 {
-  margin-top: 15px;
+body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display i {
+  margin-right: 20px;
+  color: #0c0;
+  font-size: 45px;
+  line-height: 45px;
+  vertical-align: top;
+}
+body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
+  display: inline-block;
+  margin: 0 0 15px;
+  vertical-align: top;
   color: #FFF;
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
+  line-height: 45px;
 }
-body .jh-section.highlight-section .container .row div img {
-  float: left;
-  margin-top: 75px;
+body .jh-section.highlight-section .container .row div#highlight-images {
+  margin-top: 35px;
+}
+body .jh-section.highlight-section .container .row div#highlight-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+body .jh-section.highlight-section .container .row div#highlight-images img.tool-image {
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 55px;
 }
