@@ -25,7 +25,7 @@
 	<a href="/"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
 	<nav>
 		<ul>
-			<li><a href="">Resume</a></li>
+			<li><a href="">Resum&#233;</a></li>
 			<li><a href="http://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverlow <span class="link-external-blue"></span></a></li>
 			<li><a href="https://github.com/john-harding" target="_blank">Github <span class="link-external-blue"></span></a></li>
 			<li><a href=""></a></li>
@@ -84,6 +84,7 @@
 	<div class="container" id="section-1-show">
 		<div class="row">
 			<div class="col-lg-6">
+				<img src="images/highlight-screenshots/highlight-two.png">
 			</div>
 			<div class="col-lg-6">
 			</div>

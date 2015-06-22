@@ -81,7 +81,7 @@ body header nav ul li a:focus {
 body .jh-section {
   padding: 95px 0;
 }
-body .jh-section .container {
+body .jh-section#section-0 .container {
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -113,8 +113,8 @@ body .jh-section.jh-section-grey {
 body .jh-section.highlight-section {
   height: 800px;
   min-height: 600px;
-  background: #508;
-  background-image: radial-gradient(1500px at 0 0, #002244 -20%, #002884 50%, #7722aa 100%, #550088 170%);
+  background: #05C;
+  background-image: radial-gradient(1500px at 0 0, #00aaff 0%, #0055cc 100%);
   text-align: left;
 }
 body .jh-section.highlight-section .container {

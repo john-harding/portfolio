@@ -1,55 +1,41 @@
-/* Copyright John Harding */
+/* Copyright : John Harding Jr */
 (function() {
 
-	var sectionList = [["section-0",false,120]];
-	var topIsDefault = 0;
+	// array of all sections that will pop up and gain opacity on scroll by
+	// format : [section ID, is it currently visible?, marginTop to start at when popping up]
+	var sectionList = [["section-0",false,120]]; 
+
 	window.onscroll = function () {
 		var returnDoc = getDocInfo();
 		var docHeight = returnDoc[0];
 		var docInnerHt = returnDoc[1];
+
+		// get the current scroll position
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
 
-		var jshHighlightHt = 800; // must match height of .jsh_body_portfolio_hold in style_port.css
+		var jshHighlightHt = 800; // must match height of .highlight-section in style.css; height of the highlight section
 
-		var jshTopBarHt = 65;
-/*
-		var toHeight = document.getElementById("portfolio"+(port_is_fixed?"":"2")).getBoundingClientRect().top;
+		var jshTopBarHt = 65; // height of the header bar
 
-		if(toHeight <= 0 && port_is_fixed)
-		{
-			document.getElementById("portfolio").style.height = "0px";
-			document.getElementById("portfolio2").style.position = "relative";
-			document.getElementById("jh-top").className = "jh-top_start jh-top jh-top2";
-
-			port_is_fixed = 0;
-		} else
-		if(toHeight > 0 && !port_is_fixed)
-		{
-			document.getElementById("portfolio").style.height = jshHighlightHt;
-			document.getElementById("portfolio2").style.position = "fixed";
-			document.getElementById("jh-top").className = "jh-top_start jh-top";
-
-			port_is_fixed = 1;
-		}
-*/
+		// loop through each of the sections we are going to pop up ** may want to splice off sections that have already been popped up
 		for(var i = 0;i < sectionList.length;i++)
 		{
-			var tempObj = document.getElementById(sectionList[i][0]);
-			var tempObj2 = document.getElementById(sectionList[i][0]+"-show");
+			var tempObj = document.getElementById(sectionList[i][0]);// get the element we are using to determine when to pop up
+			var tempObj2 = document.getElementById(sectionList[i][0]+"-show");  // get the element that will be popped up (it is a child of tempObj)
 			var tempTop = tempObj.getBoundingClientRect().top;
-			window.console.log(tempTop);
+			// window.console.log(tempTop);
 			if(!sectionList[i][1] && (docInnerHt - sectionList[i][2]) > tempTop && currentPos > sectionList[i][2])
 			{
 				sectionList[i][1] = true;
 				easeShow(tempObj2,0,.02);
 				easeUp(tempObj2,80);
+				break;
 			}
 		}
 
 		if(currentPos > 0 && currentPos < (jshHighlightHt - jshTopBarHt))
 		{
 			document.getElementById("jh-top").className = "jh-top-light";
-			//topIsDefault = 0;
 		} else
 		if(currentPos >= (jshHighlightHt - jshTopBarHt))
 		 {
@@ -59,7 +45,6 @@
 		if(currentPos == 0)
 		 {
 			document.getElementById("jh-top").className = "";
-			//topIsDefault = 1;
 		
 		}
 	};
@@ -86,6 +71,7 @@
 		}
 	};
 
+	// returns the height of the entire document and the viewport
 	var getDocInfo = function() {
 		var body = document.body,docElement = document.documentElement;
 
