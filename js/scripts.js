@@ -1,7 +1,7 @@
 /* Copyright John Harding */
 (function() {
 
-	var sectionList = [["section-0",false,150]];
+	var sectionList = [["section-0",false,120]];
 	var topIsDefault = 0;
 	window.onscroll = function () {
 		var returnDoc = getDocInfo();
@@ -41,7 +41,8 @@
 			if(!sectionList[i][1] && (docInnerHt - sectionList[i][2]) > tempTop && currentPos > sectionList[i][2])
 			{
 				sectionList[i][1] = true;
-				easeShow(tempObj2,0,.03);
+				easeShow(tempObj2,0,.02);
+				easeUp(tempObj2,80);
 			}
 		}
 
@@ -67,7 +68,7 @@
 		var obj = document.getElementById("highlight-images");
 		var children = obj.children;
 		var elemPositions = [
-			[50,83],
+			[86,62], //[10,-13],
 			[125,125],
 			[140,140],
 			[155,155],
@@ -76,11 +77,11 @@
 		];
 		for(var i = children.length-1; i >= 0; i--)
 		{
-			children[i].style.top = elemPositions[i][0]+"px";
-			children[i].style.left = elemPositions[i][1]+"px";
+			children[i].style.top = elemPositions[i][1]+"px";
+			children[i].style.left = elemPositions[i][0]+"px";
 			children[i].style.zIndex = Math.abs(i-6);
 
-			var t = setTimeout(closure(children[i],0),
+			var t = setTimeout(closure(children[i],0,"easeShow"),
 			(Math.abs(i-6) * 600));
 		}
 	};
@@ -101,11 +102,30 @@
 		obj.style.filter = "Alpha(opacity=" + ( start * 100 ) + ")";
 		if(start < 1)
 		{
-			var t2 = setTimeout(closure(obj,start,amt),12);
+			var t2 = setTimeout(closure(obj,start,"easeShow",amt),12);
 		}
 	};
 
-	var closure = function(child,start,amt) {
-		return function(){easeShow(child,start,amt);}
+	var easeUp = function(obj,start) {
+		start -= Math.round(start/20 + 1);
+		//start -= 6;
+		start = start >= 0 ? start : 0;
+		obj.style.marginTop = start + "px";
+		obj.style.marginBottom = "-" + start + "px";
+		if(start > 0)
+		{
+			var t2 = setTimeout(closure(obj,start,"easeUp"),8);
+		}
+	};
+
+	var closure = function(child,start,type,amt) {
+		if(type == "easeShow")
+		{
+			return function(){easeShow(child,start,amt);};
+		} else 
+		if(type == "easeUp")
+		{
+			return function(){easeUp(child,start,amt);};
+		}
 	};
 })();

@@ -17,7 +17,8 @@ body header {
 }
 body header a {
   display: inline-block;
-  padding: 5px 15px;
+  margin-left: 5px;
+  padding: 5px 20px;
 }
 body header a .logo-dark {
   display: none;
@@ -35,8 +36,47 @@ body header.jh-top-dark a .logo-dark {
 body header.jh-top-dark a .logo-light {
   display: none;
 }
-body .container {
-  width: 1400px;
+body header nav {
+  float: right;
+  display: inline-block;
+}
+body header nav ul {
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body header nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 65px;
+  text-align: center;
+}
+body header nav ul li a {
+  color: #5BF;
+  font-size: 20px;
+  line-height: 54px;
+  text-align: center;
+}
+body header nav ul li a span.link-external-blue {
+  display: inline-block;
+  margin: 0;
+}
+body header nav ul li a:hover,
+body header nav ul li a:focus {
+  color: #0AF;
+  outline: 0;
+}
+@media only screen and (min-width: 1400px) {
+  body .container {
+    width: 1370px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  body .display-img {
+    margin-top: 55px !important;
+  }
 }
 body .jh-section {
   padding: 95px 0;
@@ -73,8 +113,8 @@ body .jh-section.jh-section-grey {
 body .jh-section.highlight-section {
   height: 800px;
   min-height: 600px;
-  background: #000;
-  background-image: radial-gradient(1500px at 0 0, #002244 0%, #002884 50%, #7722aa 100%);
+  background: #508;
+  background-image: radial-gradient(1500px at 0 0, #002244 -20%, #002884 50%, #7722aa 100%, #550088 170%);
   text-align: left;
 }
 body .jh-section.highlight-section .container {
@@ -92,7 +132,7 @@ body .jh-section.highlight-section .container .row div:first-child {
 }
 body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
   position: relative;
-  float: right;
+  margin: 0 auto;
   top: -60%;
   max-width: 550px;
 }
@@ -102,7 +142,7 @@ body .jh-section.highlight-section .container .row div:first-child > div.outer-e
   margin: 0 0 16px;
   color: #FFF;
   border-bottom: 1px #0AF solid;
-  box-shadow: 0 10px 15px -10px rgba(0, 128, 255, 0.4);
+  box-shadow: 0 8px 15px -10px rgba(0, 128, 255, 0.4);
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -124,7 +164,7 @@ body .jh-section.highlight-section .container .row div:first-child > div.outer-e
   line-height: 45px;
 }
 body .jh-section.highlight-section .container .row div#highlight-images {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 body .jh-section.highlight-section .container .row div#highlight-images img {
   position: absolute;
@@ -133,22 +173,20 @@ body .jh-section.highlight-section .container .row div#highlight-images img {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-body .jh-section.highlight-section .container .row div#highlight-images img.tool-image {
-  padding: 0 25px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 55px;
-}
 body .link-external {
   display: inline-block;
-  background: url('images/external_sprite.png') 0 0;
+  background: url('../images/external_sprite.png') 0 0;
   width: 12px;
   height: 12px;
   margin-left: 8px;
 }
-body .link-external-blue {
+body a .link-external-blue {
   display: inline-block;
-  background: url('images/external_sprite.png') 0 0;
+  background: url('../images/external_sprite.png') 0 0;
   width: 12px;
   height: 12px;
   margin-left: 8px;
+}
+body a:hover .link-external-blue {
+  background: url('../images/external_sprite.png') 12px 0;
 }

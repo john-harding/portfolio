@@ -26,8 +26,8 @@
 	<nav>
 		<ul>
 			<li><a href="">Resume</a></li>
-			<li><a href="">Stackoverlow <span class="link-external-blue"></span></a></li>
-			<li><a href="">Github <span class="link-external-blue"></span></a></li>
+			<li><a href="http://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverlow <span class="link-external-blue"></span></a></li>
+			<li><a href="https://github.com/john-harding" target="_blank">Github <span class="link-external-blue"></span></a></li>
 			<li><a href=""></a></li>
 		</ul>
 	</nav>
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6" id="highlight-images">
-				<img src="images/tool.png" class="tool-image" alt="Key Words">
+				<img src="images/tool2.png" class="tool-image" alt="Key Words">
 				<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 				<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
 				<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
@@ -66,7 +66,7 @@
 				</p>
 				<p>
 					Most recent version (preview):<br />
-					<a href="">Improved Feed</a> - <a href="">New Create Accounts Page</a> - <a href="">New Developer Page</a>
+					<a href=""><strong>Improved Feed</strong></a> - <a href=""><strong>New Signup Page</strong></a> - <a href=""><strong>New Developer Page</strong></a>
 				</p>
 				<p>
 					<a href="http://www.repfive.com/login.php" target="_blank"><strong>Current Version (RepFive.com)</strong></a>
@@ -75,7 +75,7 @@
 				</P>
 			</div>
 			<div class="col-lg-6">
-				<img src="images/screen_repfive.png" alt="RepFive">
+				<img class="display-img" src="images/screen_repfive.png" alt="RepFive">
 			</div>
 		</div>
 	</div>
