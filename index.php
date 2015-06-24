@@ -54,7 +54,7 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section" id="section-0">
+<section class="jh-section section-extra-padding" id="section-0">
 	<div class="container" id="section-0-show">
 		<div class="row">
 			<div class="col-lg-6">
@@ -64,15 +64,17 @@
 					In January 2013, I began work on <strong>RepFive</strong>, a project that allowed users to follow content based on either the user posting it, 
 					or the category it was posted in.  I moved on from this project in November of 2014 when I accepted a position with Qualtrics.
 				</p>
-				<p>
-					Most recent version (preview):<br />
-					<a href=""><strong>Improved Feed</strong></a> - <a href=""><strong>New Signup Page</strong></a> - <a href=""><strong>New Developer Page</strong></a>
+				<p class="p-new-repfive">
+					<span>Preview the most recent version:</span><br />
+					<a href=""><strong>Improved Feed</strong></a><a href=""><strong>New Signup Page</strong></a><a href=""><strong>New Developer Page</strong></a>
 				</p>
-				<p>
-					<a href="http://www.repfive.com/login.php" target="_blank"><strong>Current Version (RepFive.com)</strong></a>
-					<br />
-					Username: <strong>demo</strong> Password: <strong>repfive</strong>
-				</P>
+				<p class="no-margin">
+					<a class="btn-blue" href="http://www.repfive.com/login.php" target="_blank"><strong>Current Version <span class="link-external-blue external-white"></span></strong></a>
+					<span class="r5-login-info">
+						<span>Username: <strong>demo</strong></span>
+						<span>Password: <strong>repfive</strong></span>
+					</span>
+				</p>
 			</div>
 			<div class="col-lg-6">
 				<img class="display-img" src="images/screen_repfive.png" alt="RepFive">
@@ -80,13 +82,36 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section jh-section-grey" id="section-1">
+<section class="jh-section jh-section-grey jh-section-short section-extra-padding" id="section-1">
 	<div class="container" id="section-1-show">
 		<div class="row">
 			<div class="col-lg-6">
-				<img src="images/highlight-screenshots/highlight-two.png">
+				<img src="images/highlight-screenshots/highlight-two.png" alt="Short Lived Projects">
 			</div>
 			<div class="col-lg-6">
+				<h1>Short Lived Side Projects</h1>
+				<h2>Unfinished projects, but I like to think they look nice.</h2>
+				<p>
+					<a href="#">CommentKing</a> was started when I began applying for jobs in late 2014.  I took a job with Qualtrics one to two weeks after
+					starting, so it was abandoned. (Late Oct to Early November of 2014)
+				</p>
+				<p>
+					<a href="#">Embark</a> was created in response to a friends idea that was quickly deserted.  I spent one night (granted, it was 
+					the whole night) on the project. (May 2014)
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="jh-section section-extra-padding section-no-padding-bottom" id="section-2">
+	<div class="container" id="section-1-show">
+		<div class="row">
+			<div class="col-lg-6">
+			<h1>Portfolios</h1>
+			<h2></h2>
+			</div>
+			<div class="col-lg-6">
+				<img src="images/portfolios.png" alt="Portfolio Screenshots">
 			</div>
 		</div>
 	</div>

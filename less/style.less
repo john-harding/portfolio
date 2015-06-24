@@ -84,14 +84,70 @@ body {
 	.jh-section {
 		padding:95px 0;
 
+		&.section-extra-padding {
+			padding:105px 0;
+		}
+		&.section-no-padding-bottom {
+			padding-bottom:0px;
+		}
+
 		&#section-0 {
 			.container {
 				opacity:0;
 				filter:alpha(opacity=0);
+
+				.p-new-repfive {
+					margin:0 0 22px;
+					padding:0 0 11px;
+					border:1px #DAE2E9 solid;
+					border-width:0 0 1px;
+					span {
+						display:inline-block;
+						margin-bottom:10px;
+						color:#40454A;
+						font-weight:600;
+					}
+					a {
+						margin-right:30px;
+					}
+				}
+
+				.btn-blue {
+					float:left;
+				}
+
+				p {
+					.r5-login-info {
+						display:inline-block;
+						float:left;
+						padding:12px 15px;
+						background:#EEF3F8;
+						transition:all 1s;
+						span {
+							display:inline-block;
+							padding:3px 0;
+							&:first-child {
+								margin-right:10px;
+								padding-right:10px;
+								border-right:2px #D0E0F0 solid;
+								transition:all 1s;
+							}
+						}
+					}
+					&:hover {
+						.r5-login-info {
+							background:#E0E7EE;
+							span:first-child {
+								border-color:#C0D0E0;
+							}
+						}
+					}
+				}
 			}
 		}
 		a {
 			color:#0AF;
+			font-weight:600;
 		}
 		h1 {
 			margin-bottom:22px;
@@ -113,7 +169,16 @@ body {
 			margin:0 auto;
 		}
 		&.jh-section-grey {
-			background:#E0E5EA;
+			background:#EEF3F8;
+		}
+		&.jh-section-short {
+			img {
+				margin:0;
+			}
+			h2 {
+				margin:7px 0 17px;
+				line-height:40px;
+			}
 		}
 		&.highlight-section {
 			height:800px;
@@ -159,7 +224,6 @@ body {
 								margin:0 0 15px;
 								vertical-align:top;
 								color:#FFF;
-								color:rgba(255,255,255,.8);
 								font-size:20px;
 								line-height:45px;
 							}
@@ -189,19 +253,39 @@ body {
 		margin-left:8px;
 	}
 	a {
+		&.btn-blue {
+			display:inline-block;
+			margin:0;
+			padding:15px 20px;
+			background-color:#0AF;
+			color:#FFF;
+			&:hover,&:focus {
+				background:#10151A;
+				text-decoration:none;
+			}
+		}
 		.link-external-blue {
 			display:inline-block;
 			background:url('../images/external_sprite.png') 0 0;
 			width:12px;
 			height:12px;
 			margin-left:8px;
+			&.external-white {
+				background-position:-24px 0;
+			}
 		}
 
 		&:hover {
 			.link-external-blue {
-				background:url('../images/external_sprite.png') 12px 0;
+				background:url('../images/external_sprite.png') -12px 0;
+				&.external-white {
+					background-position:-24px 0;
+				}
 			}
 		}
+	}
+	.no-margin {
+		margin:0;
 	}
 }
 
