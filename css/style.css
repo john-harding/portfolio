@@ -87,7 +87,7 @@ body .jh-section.section-extra-padding {
 body .jh-section.section-no-padding-bottom {
   padding-bottom: 0px;
 }
-body .jh-section#section-0 .container {
+body .jh-section.section-hidden .container {
   opacity: 0;
   filter: alpha(opacity=0);
 }

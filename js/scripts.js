@@ -2,8 +2,8 @@
 (function() {
 
 	// array of all sections that will pop up and gain opacity on scroll by
-	// format : [section ID, is it currently visible?, marginTop to start at when popping up]
-	var sectionList = [["section-0",false,120]]; 
+	// format : [section ID, is it currently visible?, marginTop to start at when popping up,should this pop up?,increase opacity amount for every iteration]
+	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015]]; 
 
 	window.onscroll = function () {
 		var returnDoc = getDocInfo();
@@ -20,6 +20,7 @@
 		// loop through each of the sections we are going to pop up ** may want to splice off sections that have already been popped up
 		for(var i = 0;i < sectionList.length;i++)
 		{
+			window.console.log(i);
 			var tempObj = document.getElementById(sectionList[i][0]);// get the element we are using to determine when to pop up
 			var tempObj2 = document.getElementById(sectionList[i][0]+"-show");  // get the element that will be popped up (it is a child of tempObj)
 			var tempTop = tempObj.getBoundingClientRect().top;
@@ -27,8 +28,11 @@
 			if(!sectionList[i][1] && (docInnerHt - sectionList[i][2]) > tempTop && currentPos > sectionList[i][2])
 			{
 				sectionList[i][1] = true;
-				easeShow(tempObj2,0,.02);
-				easeUp(tempObj2,80);
+				easeShow(tempObj2,0,sectionList[i][4]);
+				if(sectionList[i][3])
+				{
+					easeUp(tempObj2,80);
+				}
 				break;
 			}
 		}

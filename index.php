@@ -54,7 +54,7 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section section-extra-padding" id="section-0">
+<section class="jh-section section-extra-padding section-hidden" id="section-0">
 	<div class="container" id="section-0-show">
 		<div class="row">
 			<div class="col-lg-6">
@@ -82,7 +82,7 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section jh-section-grey jh-section-short section-extra-padding" id="section-1">
+<section class="jh-section jh-section-grey jh-section-short section-extra-padding section-hidden" id="section-1">
 	<div class="container" id="section-1-show">
 		<div class="row">
 			<div class="col-lg-6">
@@ -104,11 +104,18 @@
 	</div>
 </section>
 <section class="jh-section section-extra-padding section-no-padding-bottom" id="section-2">
-	<div class="container" id="section-1-show">
+	<div class="container" id="section-2-show">
 		<div class="row">
 			<div class="col-lg-6">
 			<h1>Portfolios</h1>
-			<h2></h2>
+			<h2>No explanation necessary!  These are the two portfolios I created to display my strengths.</h2>
+			<p>
+				See my old portfolio <a href="">here.</a>  I created it in October 2014 before I started 
+				applying for jobs.
+			</p>
+			<p>
+				You're checking out my current portfolio now!
+			</p>
 			</div>
 			<div class="col-lg-6">
 				<img src="images/portfolios.png" alt="Portfolio Screenshots">
