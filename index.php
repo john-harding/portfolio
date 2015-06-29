@@ -13,6 +13,7 @@
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="icon" href="images/icon_small.ico">
 
  <!-- HTML5 Shim and Respond.js -->
   <!--[if lt IE 9]>
@@ -119,6 +120,41 @@
 			</div>
 			<div class="col-lg-6">
 				<img src="images/portfolios.png" alt="Portfolio Screenshots">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="jh-section section-extra-padding" id="section-3">
+	<div class="container" id="section-3-show">
+		<div class="row">
+			<div class="col-lg-12">
+			<h1>Full Portfolio</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3">
+				<a class="outer-portfolio-image" href="">
+					<span>RepFive</span>
+					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
+				</a>
+			</div>
+			<div class="col-lg-3">
+				<a class="outer-portfolio-image" href="">
+					<span>Project 3</span>
+					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
+				</a>
+			</div>
+			<div class="col-lg-3">
+				<a class="outer-portfolio-image" href="">
+					<span>Old Portfolio</span>
+					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
+				</a>
+			</div>
+			<div class="col-lg-3">
+				<a class="outer-portfolio-image" href="">
+					<span>CommentKing</span>
+					<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
+				</a>
 			</div>
 		</div>
 	</div>

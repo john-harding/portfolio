@@ -132,6 +132,54 @@ body .jh-section#section-0 .container p:hover .r5-login-info {
 body .jh-section#section-0 .container p:hover .r5-login-info span:first-child {
   border-color: #C0D0E0;
 }
+body .jh-section#section-3 {
+  background: #20252A;
+  color: #FFF;
+}
+body .jh-section#section-3 h1 {
+  margin-bottom: 75px;
+  color: #FFF;
+  text-align: center;
+}
+body .jh-section#section-3 div.container div.row div a.outer-portfolio-image {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: 1px transparent solid;
+  transition: all .3s;
+}
+body .jh-section#section-3 div.container div.row div a.outer-portfolio-image > span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #0AF;
+  background: transparent;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 0;
+  transition: all .3s;
+}
+body .jh-section#section-3 div.container div.row div a.outer-portfolio-image img {
+  position: relative;
+  margin: 0 auto;
+  transition: all .3s;
+  z-index: 1;
+}
+body .jh-section#section-3 div.container div.row div a.outer-portfolio-image:hover > span {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+body .jh-section#section-3 div.container div.row div a.outer-portfolio-image:hover img {
+  margin-top: 35px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
 body .jh-section a {
   color: #0AF;
   font-weight: 600;

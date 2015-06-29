@@ -150,6 +150,63 @@ body {
 				}
 			}
 		}
+		&#section-3 {
+			background:#20252A;
+			color:#FFF;
+			h1 {
+				margin-bottom:75px;
+				color:#FFF;
+				text-align:center;
+			}
+			div.container {
+				div.row {
+					div {
+						a.outer-portfolio-image {
+							position:relative;
+							display:block;
+							padding:0;
+							border:1px transparent solid;
+							transition:all .3s;
+							> span {
+								position:absolute;
+								display:block;
+								top:0;
+								left:0;
+								width:100%;
+								color:#0AF;
+								background:transparent;
+								font-size:20px;
+								text-align:center;
+								text-transform:uppercase;
+								letter-spacing:2px;
+								opacity:0;
+								filter:alpha(opacity=0);
+								z-index:0;
+								transition:all .3s;
+							}
+							img {
+								position:relative;
+								margin:0 auto;
+								//max-width:290px;
+								transition:all .3s;
+								z-index:1;
+							}
+							&:hover {
+								> span {
+									opacity:1;
+									filter:alpha(opacity=100);
+								}
+								img {
+									margin-top:35px;
+									opacity:0.6;
+									filter:alpha(opacity=60);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		a {
 			color:#0AF;
 			font-weight:600;
