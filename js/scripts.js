@@ -9,6 +9,7 @@
 		var returnDoc = getDocInfo();
 		var docHeight = returnDoc[0];
 		var docInnerHt = returnDoc[1];
+		var paralax = document.getElementsByClassName("paralax-bg");
 
 		// get the current scroll position
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
@@ -20,11 +21,11 @@
 		// loop through each of the sections we are going to pop up ** may want to splice off sections that have already been popped up
 		for(var i = 0;i < sectionList.length;i++)
 		{
-			window.console.log(i);
+			//window.console.log(i);
 			var tempObj = document.getElementById(sectionList[i][0]);// get the element we are using to determine when to pop up
 			var tempObj2 = document.getElementById(sectionList[i][0]+"-show");  // get the element that will be popped up (it is a child of tempObj)
 			var tempTop = tempObj.getBoundingClientRect().top;
-			// window.console.log(tempTop);
+			//window.console.log(tempTop);
 			if(!sectionList[i][1] && (docInnerHt - sectionList[i][2]) > tempTop && currentPos > sectionList[i][2])
 			{
 				sectionList[i][1] = true;
@@ -34,6 +35,14 @@
 					easeUp(tempObj2,80);
 				}
 				break;
+			}
+		}
+		for(var i2=0;i2 < paralax.length;i2++)
+		{
+			var tempTop2 = paralax[i2].getBoundingClientRect().top;
+			if(tempTop2 <= (docInnerHt))
+			{
+				paralax[i2].style.backgroundPosition = "center "+(-Math.round((docInnerHt-650-tempTop2)/2))+"px";
 			}
 		}
 

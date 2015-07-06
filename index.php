@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>John Harding Jr's Portfolio</title>
 <!-- Custom CSS - Compiled from LESS -->
-<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/style.css?v=0.0.0" type="text/css">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -26,7 +26,13 @@
 	<a href="/"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
 	<nav>
 		<ul>
-			<li><a href="">Resum&#233;</a></li>
+			<li><a href="resume.html">Resum&#233;</a>
+				<ul class="sub-resume">
+					<li><a href="John-Harding-Resume.html">HTML</a></li>
+					<li><a href="John-Harding-Resume.docx">Word Document</a></li>
+					<li><a href="John-Harding-Resume.pdf">PDF</a></li>
+				</ul>
+			</li>
 			<li><a href="http://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverlow <span class="link-external-blue"></span></a></li>
 			<li><a href="https://github.com/john-harding" target="_blank">Github <span class="link-external-blue"></span></a></li>
 			<li><a href=""></a></li>
@@ -109,13 +115,13 @@
 		<div class="row">
 			<div class="col-lg-6">
 			<h1>Portfolios</h1>
-			<h2>No explanation necessary!  These are the two portfolios I created to display my strengths.</h2>
+			<h2>These are the two portfolios I created to display my work and my strengths.</h2>
 			<p>
 				See my old portfolio <a href="">here.</a>  I created it in October 2014 before I started 
 				applying for jobs.
 			</p>
 			<p>
-				You're checking out my current portfolio now!
+				To see my current portfolio, scroll to the top of this page.
 			</p>
 			</div>
 			<div class="col-lg-6">
@@ -125,40 +131,71 @@
 	</div>
 </section>
 <section class="jh-section section-extra-padding" id="section-3">
+	<div class="section-bg-overlay section-bg-absolute">
+	</div>
+	<div class="section-bg-display section-bg-absolute paralax-bg">
+	</div>
 	<div class="container" id="section-3-show">
 		<div class="row">
 			<div class="col-lg-12">
 			<h1>Full Portfolio</h1>
+			<hr>
+				<div class="folder-icon">
+					<i class="fa fa-folder-open-o"></i>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-3">
+		<div class="row portfolio-images">
+			<div class="col-lg-4">
 				<a class="outer-portfolio-image" href="">
 					<span>RepFive</span>
 					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 				</a>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-4">
+				<a class="outer-portfolio-image" href="">
+					<span>This Portfolio</span>
+					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
+				</a>
+			</div>
+			<div class="col-lg-4">
 				<a class="outer-portfolio-image" href="">
 					<span>Project 3</span>
 					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
 				</a>
 			</div>
-			<div class="col-lg-3">
-				<a class="outer-portfolio-image" href="">
-					<span>Old Portfolio</span>
-					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
-				</a>
-			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-4">
 				<a class="outer-portfolio-image" href="">
 					<span>CommentKing</span>
 					<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
 				</a>
 			</div>
+			<div class="col-lg-4">
+				<a class="outer-portfolio-image" href="">
+					<span>UMiami Micro'Canes</span>
+					<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes">
+				</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="outer-portfolio-image" href="">
+					<span>Old Portfolio</span>
+					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="js/scripts.js"></script>
+<section class="jh-section section-extra-padding" id="section-4">
+	<div class="container" id="section-4-show">
+		<div class="row">
+			<div class="col-lg-6">
+			<h1>About Me</h1>
+			</div>
+			<div class="col-lg-6">
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/scripts.js?v=0.0.0"></script>
 </body>
 </html>
