@@ -1,4 +1,4 @@
-html * {
+html body.body-index * {
 	font:normal 16px Arial,Helvetica,sans-serif;
 }
 
@@ -7,11 +7,47 @@ html,body {
 	height:100%;
 }
 
-body {
+body.body-main {
+	&.body-resume {
+		header {
+			background:#000;
+			a {
+				font-family:Arial,Helvetica,sans-serif;
+				text-decoration:none;
+				.logo-dark {
+					display:block;
+				}
+				.logo-light {
+					display:none;
+				}
+			}
+		}
+		.resume {
+			max-width:1000px;
+			margin:0 auto;
+			padding:110px 0;
+
+			.align-right {
+				float:right;
+			}
+			.skills-section {
+				color:#444;
+				font-family:Segoe UI, serif;
+				font-size:13px;
+				tr {
+					td:first-child {
+						padding:4px 0;
+						width:100px;
+					}
+				}
+			}
+		}
+	}
 	margin:0;
 	padding:0;
 	header {
 		position:fixed;
+		top:0;
 		width:100%;
 		z-index:20;
 		a {
@@ -40,6 +76,7 @@ body {
 		nav {
 			float:right;
 			display:inline-block;
+			margin-right:25px;
 			ul {
 				float:right;
 				display:inline-block;
@@ -188,6 +225,12 @@ body {
 				}
 			}
 		}
+		&#section-2 {
+			.container {
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+		}
 		&#section-3 {
 			position:relative;
 			background:#20252A;
@@ -282,6 +325,7 @@ body {
 		}
 		.section-bg-display {
 			background:url('../images/workstation.jpg');
+			background-size:100% auto;
 			z-index:0;
 		}
 		.section-bg-absolute {
@@ -374,7 +418,7 @@ body {
 							}
 						}
 					}
-					div#highlight-images {
+					div#highlight-images-outer {
 						margin-top:40px;
 						img {
 							position:absolute;

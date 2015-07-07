@@ -21,21 +21,21 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="body-main body-index">
 <header id="jh-top">
-	<a href="/"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
+	<a href="./"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
 	<nav>
 		<ul>
-			<li><a href="resume.html">Resum&#233;</a>
+			<li><a href="#">Full Portfolio</a></li>
+			<li><a href="John-Harding-Resume.html">Resum&#233;</a>
 				<ul class="sub-resume">
 					<li><a href="John-Harding-Resume.html">HTML</a></li>
 					<li><a href="John-Harding-Resume.docx">Word Document</a></li>
 					<li><a href="John-Harding-Resume.pdf">PDF</a></li>
 				</ul>
 			</li>
-			<li><a href="http://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverlow <span class="link-external-blue"></span></a></li>
+			<li><a href="http://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverflow <span class="link-external-blue"></span></a></li>
 			<li><a href="https://github.com/john-harding" target="_blank">Github <span class="link-external-blue"></span></a></li>
-			<li><a href=""></a></li>
 		</ul>
 	</nav>
 </header>
@@ -44,19 +44,21 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="outer-exp-display">
-					<h1>Front End Engineer</h1>
+					<h1>Front End Developer</h1>
 					<h3><i class="fa fa-check-circle-o"></i> 7 Years Practical Experience</h3>
 					<h3><i class="fa fa-check-circle-o"></i> 1.75 Years Personal Work Experience</h3>
 					<h3><i class="fa fa-check-circle-o"></i> 7 Months Work Experience</h3>
 				</div>
 			</div>
-			<div class="col-lg-6" id="highlight-images">
-				<img src="images/tool2.png" class="tool-image" alt="Key Words">
-				<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
-				<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
-				<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
-				<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
-				<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes Preview">
+			<div class="col-lg-6" id="highlight-images-outer">
+				<a href="#" id="highlight-images">
+					<img src="images/tool2.png" class="tool-image" alt="Key Words">
+					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
+					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
+					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
+					<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
+					<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes Preview">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -100,11 +102,11 @@
 				<h2>Unfinished projects, but I like to think they look nice.</h2>
 				<p>
 					<a href="#">CommentKing</a> was started when I began applying for jobs in late 2014.  I took a job with Qualtrics one to two weeks after
-					starting, so it was abandoned. (Late Oct to Early November of 2014)
+					starting, so it was sidelined. (Late Oct to Early November of 2014)
 				</p>
 				<p>
-					<a href="#">Embark</a> was created in response to a friends idea that was quickly deserted.  I spent one night (granted, it was 
-					the whole night) on the project. (May 2014)
+					<a href="#">Embark</a> was created in response to a friends idea that has since been put on hold.  I spent one night
+					(granted, it was the whole night) on the project. (May 2014)
 				</p>
 			</div>
 		</div>

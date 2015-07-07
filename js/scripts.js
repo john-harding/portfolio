@@ -3,7 +3,7 @@
 
 	// array of all sections that will pop up and gain opacity on scroll by
 	// format : [section ID, is it currently visible?, marginTop to start at when popping up,should this pop up?,increase opacity amount for every iteration]
-	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015]]; 
+	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015],["section-2",false,300,true,1]]; 
 
 	window.onscroll = function () {
 		var returnDoc = getDocInfo();
@@ -42,7 +42,8 @@
 			var tempTop2 = paralax[i2].getBoundingClientRect().top;
 			if(tempTop2 <= (docInnerHt))
 			{
-				paralax[i2].style.backgroundPosition = "center "+(-Math.round((docInnerHt-650-tempTop2)/2))+"px";
+				console.log("here");
+				paralax[i2].style.backgroundPosition = "center "+(-Math.round((docInnerHt-600-tempTop2)/1.5))+"px";
 			}
 		}
 

@@ -1,4 +1,4 @@
-html * {
+html body.body-index * {
   font: normal 16px Arial, Helvetica, sans-serif;
 }
 html,
@@ -6,70 +6,102 @@ body {
   width: 100%;
   height: 100%;
 }
-body {
+body.body-main {
   margin: 0;
   padding: 0;
 }
-body header {
+body.body-main.body-resume header {
+  background: #000;
+}
+body.body-main.body-resume header a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body.body-main.body-resume header a .logo-dark {
+  display: block;
+}
+body.body-main.body-resume header a .logo-light {
+  display: none;
+}
+body.body-main.body-resume .resume {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+body.body-main.body-resume .resume .align-right {
+  float: right;
+}
+body.body-main.body-resume .resume .skills-section {
+  color: #444;
+  font-family: Segoe UI, serif;
+  font-size: 13px;
+}
+body.body-main.body-resume .resume .skills-section tr td:first-child {
+  padding: 4px 0;
+  width: 100px;
+}
+body.body-main header {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 20;
 }
-body header a {
+body.body-main header a {
   display: inline-block;
   margin-left: 5px;
   padding: 5px 20px;
 }
-body header a .logo-dark {
+body.body-main header a .logo-dark {
   display: none;
 }
-body header.jh-top-light {
+body.body-main header.jh-top-light {
   background: #000;
   background: rgba(0, 0, 0, 0.3);
 }
-body header.jh-top-dark {
+body.body-main header.jh-top-dark {
   background: #000;
 }
-body header.jh-top-dark a .logo-dark {
+body.body-main header.jh-top-dark a .logo-dark {
   display: block;
 }
-body header.jh-top-dark a .logo-light {
+body.body-main header.jh-top-dark a .logo-light {
   display: none;
 }
-body header nav {
+body.body-main header nav {
   float: right;
   display: inline-block;
+  margin-right: 25px;
 }
-body header nav ul {
+body.body-main header nav ul {
   float: right;
   display: inline-block;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-body header nav ul li {
+body.body-main header nav ul li {
   position: relative;
   display: inline-block;
   vertical-align: top;
   line-height: 65px;
   text-align: center;
 }
-body header nav ul li a {
+body.body-main header nav ul li a {
   color: #5BF;
   font-size: 20px;
   line-height: 54px;
   text-align: center;
 }
-body header nav ul li a span.link-external-blue {
+body.body-main header nav ul li a span.link-external-blue {
   display: inline-block;
   margin: 0;
 }
-body header nav ul li a:hover,
-body header nav ul li a:focus {
+body.body-main header nav ul li a:hover,
+body.body-main header nav ul li a:focus {
   color: #0AF;
   outline: 0;
 }
-body header nav ul li .sub-resume {
+body.body-main header nav ul li .sub-resume {
   position: absolute;
   display: none;
   margin: 0;
@@ -78,23 +110,23 @@ body header nav ul li .sub-resume {
   left: -40%;
   width: 180%;
 }
-body header nav ul li .sub-resume li {
+body.body-main header nav ul li .sub-resume li {
   display: block;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-body header nav ul li .sub-resume li a {
+body.body-main header nav ul li .sub-resume li a {
   display: block;
   margin: 0;
   background: #20252A;
   border-bottom: 1px #30353A solid;
 }
-body header nav ul li .sub-resume li a:hover {
+body.body-main header nav ul li .sub-resume li a:hover {
   background: #1A1F24;
   text-decoration: none;
 }
-body header nav ul li .sub-resume:before {
+body.body-main header nav ul li .sub-resume:before {
   content: '';
   position: absolute;
   border: 15px transparent solid;
@@ -103,114 +135,118 @@ body header nav ul li .sub-resume:before {
   left: 50%;
   margin-left: -15px;
 }
-body header nav ul li:hover .sub-resume {
+body.body-main header nav ul li:hover .sub-resume {
   display: block;
 }
 @media only screen and (min-width: 1400px) {
-  body .container {
+  body.body-main .container {
     width: 1370px;
   }
 }
 @media only screen and (max-width: 1399px) {
-  body .display-img {
+  body.body-main .display-img {
     margin-top: 55px !important;
   }
 }
-body .jh-section {
+body.body-main .jh-section {
   padding: 95px 0;
 }
-body .jh-section.section-extra-padding {
+body.body-main .jh-section.section-extra-padding {
   padding: 105px 0;
 }
-body .jh-section.section-no-padding-bottom {
+body.body-main .jh-section.section-no-padding-bottom {
   padding-bottom: 0px;
 }
-body .jh-section.section-hidden .container {
+body.body-main .jh-section.section-hidden .container {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-body .jh-section#section-0 .container .p-new-repfive {
+body.body-main .jh-section#section-0 .container .p-new-repfive {
   margin: 0 0 22px;
   padding: 0 0 11px;
   border: 1px #DAE2E9 solid;
   border-width: 0 0 1px;
 }
-body .jh-section#section-0 .container .p-new-repfive span {
+body.body-main .jh-section#section-0 .container .p-new-repfive span {
   display: inline-block;
   margin-bottom: 10px;
   color: #40454A;
   font-weight: 600;
 }
-body .jh-section#section-0 .container .p-new-repfive a {
+body.body-main .jh-section#section-0 .container .p-new-repfive a {
   margin-right: 30px;
 }
-body .jh-section#section-0 .container .btn-blue {
+body.body-main .jh-section#section-0 .container .btn-blue {
   float: left;
 }
-body .jh-section#section-0 .container p .r5-login-info {
+body.body-main .jh-section#section-0 .container p .r5-login-info {
   display: inline-block;
   float: left;
   padding: 12px 15px;
   background: #EEF3F8;
   transition: all 1s;
 }
-body .jh-section#section-0 .container p .r5-login-info span {
+body.body-main .jh-section#section-0 .container p .r5-login-info span {
   display: inline-block;
   padding: 3px 0;
 }
-body .jh-section#section-0 .container p .r5-login-info span:first-child {
+body.body-main .jh-section#section-0 .container p .r5-login-info span:first-child {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 2px #D0E0F0 solid;
   transition: all 1s;
 }
-body .jh-section#section-0 .container p:hover .r5-login-info {
+body.body-main .jh-section#section-0 .container p:hover .r5-login-info {
   background: #E0E7EE;
 }
-body .jh-section#section-0 .container p:hover .r5-login-info span:first-child {
+body.body-main .jh-section#section-0 .container p:hover .r5-login-info span:first-child {
   border-color: #C0D0E0;
 }
-body .jh-section#section-3 {
+body.body-main .jh-section#section-2 .container {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+body.body-main .jh-section#section-3 {
   position: relative;
   background: #20252A;
   color: #FFF;
 }
-body .jh-section#section-3 .folder-icon {
+body.body-main .jh-section#section-3 .folder-icon {
   display: none;
   margin-bottom: 75px;
   text-align: center;
 }
-body .jh-section#section-3 .folder-icon i {
+body.body-main .jh-section#section-3 .folder-icon i {
   color: #0AF;
   font-size: 40px;
 }
-body .jh-section#section-3 h1 {
+body.body-main .jh-section#section-3 h1 {
   margin: 0;
   color: #FFF;
   text-align: center;
   letter-spacing: 8px;
 }
-body .jh-section#section-3 hr {
+body.body-main .jh-section#section-3 hr {
   margin-top: 45px;
   width: 200px;
   border-color: #456;
   border-width: 2px 0 0;
 }
-body .jh-section#section-3 div.container {
+body.body-main .jh-section#section-3 div.container {
   position: relative;
   z-index: 2;
 }
-body .jh-section#section-3 div.container div.row.portfolio-images {
+body.body-main .jh-section#section-3 div.container div.row.portfolio-images {
   position: relative;
   top: -50px;
 }
-body .jh-section#section-3 div.container div.row.portfolio-images div {
+body.body-main .jh-section#section-3 div.container div.row.portfolio-images div {
   margin-top: 7%;
 }
-body .jh-section#section-3 div.container div.row div {
+body.body-main .jh-section#section-3 div.container div.row div {
   margin-bottom: 0;
 }
-body .jh-section#section-3 div.container div.row div a.outer-portfolio-image {
+body.body-main .jh-section#section-3 div.container div.row div a.outer-portfolio-image {
   position: relative;
   display: block;
   padding: 0;
@@ -218,7 +254,7 @@ body .jh-section#section-3 div.container div.row div a.outer-portfolio-image {
   border: 1px transparent solid;
   transition: all .3s;
 }
-body .jh-section#section-3 div.container div.row div a.outer-portfolio-image > span {
+body.body-main .jh-section#section-3 div.container div.row div a.outer-portfolio-image > span {
   position: absolute;
   display: block;
   top: 0;
@@ -235,7 +271,7 @@ body .jh-section#section-3 div.container div.row div a.outer-portfolio-image > s
   z-index: 0;
   transition: all .3s;
 }
-body .jh-section#section-3 div.container div.row div a.outer-portfolio-image img {
+body.body-main .jh-section#section-3 div.container div.row div a.outer-portfolio-image img {
   position: relative;
   margin: 0 auto;
   transition: all .3s;
@@ -243,90 +279,91 @@ body .jh-section#section-3 div.container div.row div a.outer-portfolio-image img
   opacity: .7;
   filter: alpha(opacity=70);
 }
-body .jh-section#section-3 div.container div.row div a.outer-portfolio-image:hover > span {
+body.body-main .jh-section#section-3 div.container div.row div a.outer-portfolio-image:hover > span {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-body .jh-section#section-3 div.container div.row div a.outer-portfolio-image:hover img {
+body.body-main .jh-section#section-3 div.container div.row div a.outer-portfolio-image:hover img {
   margin-top: 35px;
   opacity: 1;
   filter: alpha(opacity=100);
 }
-body .jh-section .section-bg-overlay {
+body.body-main .jh-section .section-bg-overlay {
   background: #20252A;
   background: rgba(0, 20, 40, 0.8);
   z-index: 1;
 }
-body .jh-section .section-bg-display {
+body.body-main .jh-section .section-bg-display {
   background: url('../images/workstation.jpg');
+  background-size: 100% auto;
   z-index: 0;
 }
-body .jh-section .section-bg-absolute {
+body.body-main .jh-section .section-bg-absolute {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-body .jh-section a {
+body.body-main .jh-section a {
   color: #0AF;
   font-weight: 600;
 }
-body .jh-section h1 {
+body.body-main .jh-section h1 {
   margin-bottom: 22px;
   color: #50555A;
   font-size: 45px;
   text-transform: uppercase;
 }
-body .jh-section h2 {
+body.body-main .jh-section h2 {
   margin: 15px 0 22px;
   color: #60656A;
   font-size: 24px;
   font-weight: 100;
 }
-body .jh-section p {
+body.body-main .jh-section p {
   line-height: 26px;
 }
-body .jh-section img {
+body.body-main .jh-section img {
   display: block;
   margin: 0 auto;
 }
-body .jh-section.jh-section-grey {
+body.body-main .jh-section.jh-section-grey {
   background: #EEF3F8;
 }
-body .jh-section.jh-section-short img {
+body.body-main .jh-section.jh-section-short img {
   margin: 0;
 }
-body .jh-section.jh-section-short h2 {
+body.body-main .jh-section.jh-section-short h2 {
   margin: 7px 0 17px;
   line-height: 40px;
 }
-body .jh-section.highlight-section {
+body.body-main .jh-section.highlight-section {
   height: 800px;
   min-height: 600px;
   background: #05C;
   background-image: radial-gradient(1500px at 0 0, #00aaff 0%, #0055cc 100%);
   text-align: left;
 }
-body .jh-section.highlight-section .container {
+body.body-main .jh-section.highlight-section .container {
   height: 100%;
   opacity: 1;
   filter: alpha(opacity=100);
 }
-body .jh-section.highlight-section .container .row {
+body.body-main .jh-section.highlight-section .container .row {
   height: 100%;
 }
-body .jh-section.highlight-section .container .row div:first-child {
+body.body-main .jh-section.highlight-section .container .row div:first-child {
   position: relative;
   top: 50%;
   height: 200px;
 }
-body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
   position: relative;
   margin: 0 auto;
   top: -60%;
   max-width: 550px;
 }
-body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1 {
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1 {
   display: inline-block;
   padding-bottom: 9px;
   margin: 0 0 16px;
@@ -337,14 +374,14 @@ body .jh-section.highlight-section .container .row div:first-child > div.outer-e
   text-transform: uppercase;
   letter-spacing: 4px;
 }
-body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display i {
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display i {
   margin-right: 20px;
   color: #0C0;
   font-size: 45px;
   line-height: 45px;
   vertical-align: top;
 }
-body .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
   display: inline-block;
   margin: 0 0 15px;
   vertical-align: top;
@@ -352,51 +389,51 @@ body .jh-section.highlight-section .container .row div:first-child > div.outer-e
   font-size: 20px;
   line-height: 45px;
 }
-body .jh-section.highlight-section .container .row div#highlight-images {
+body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer {
   margin-top: 40px;
 }
-body .jh-section.highlight-section .container .row div#highlight-images img {
+body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer img {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
-body .link-external {
+body.body-main .link-external {
   display: inline-block;
   background: url('../images/external_sprite.png') 0 0;
   width: 12px;
   height: 12px;
   margin-left: 8px;
 }
-body a.btn-blue {
+body.body-main a.btn-blue {
   display: inline-block;
   margin: 0;
   padding: 15px 20px;
   background-color: #0AF;
   color: #FFF;
 }
-body a.btn-blue:hover,
-body a.btn-blue:focus {
+body.body-main a.btn-blue:hover,
+body.body-main a.btn-blue:focus {
   background: #10151A;
   text-decoration: none;
 }
-body a .link-external-blue {
+body.body-main a .link-external-blue {
   display: inline-block;
   background: url('../images/external_sprite.png') 0 0;
   width: 12px;
   height: 12px;
   margin-left: 8px;
 }
-body a .link-external-blue.external-white {
+body.body-main a .link-external-blue.external-white {
   background-position: -24px 0;
 }
-body a:hover .link-external-blue {
+body.body-main a:hover .link-external-blue {
   background: url('../images/external_sprite.png') -12px 0;
 }
-body a:hover .link-external-blue.external-white {
+body.body-main a:hover .link-external-blue.external-white {
   background-position: -24px 0;
 }
-body .no-margin {
+body.body-main .no-margin {
   margin: 0;
 }
