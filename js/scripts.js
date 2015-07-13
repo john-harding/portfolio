@@ -39,7 +39,6 @@
 					{
 						easeUp(tempObj2,80);
 					}
-					break;
 				}
 			}
 			sectionEnabled = !tempSectionVisible;
@@ -75,7 +74,7 @@
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
 		var portObj = document.getElementById("section-3");
 		var elemHeight = portObj.getBoundingClientRect().top;
-		var goToPos = elemHeight + currentPos - 69; // 69 is height of top header bar
+		var goToPos = elemHeight + currentPos - 65; // height of top header bar
 		var increment = 100;
 
 		if((currentPos + increment) < goToPos)

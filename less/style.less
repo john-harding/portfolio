@@ -1,3 +1,22 @@
+// Mixins
+.border-radius(@radius) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+.transition(@transition) {
+	transition:@transition;
+	-moz-transition:@transition;
+	-webkit-transition:@transition;
+}
+.box-shadow(@shadow) {
+	box-shadow:@shadow;
+	-moz-box-shadow:@shadow;
+	-webkit-box-shadow:@shadow;
+}
+// End Mixins
+
+
 html body.body-index * {
 	font:normal 16px Arial,Helvetica,sans-serif;
 }
@@ -56,14 +75,40 @@ body.body-main {
 		a {
 			display:inline-block;
 			margin-left:5px;
-			padding:5px 20px;
+			padding:5px 0 5px 20px;
 			.logo-dark {
 				display:none;
+			}
+			> img.logo-dark, > img.logo-light {
+				@media screen and (max-width:1250px)
+				{
+					padding-top:5px;
+					width:400px;
+				}
+			}
+		}
+
+
+		@media screen and (max-width:1010px)
+		{
+			> a {
+				display:block;
+				margin:0 auto;
+				width:400px;
 			}
 		}
 		&.jh-top-light {
 			background:#000;
 			background:rgba(0,0,0,.3);
+
+			@media screen and (max-width:1010px)
+			{
+				background:rgba(0,0,0,.8);
+			}
+		}
+		@media screen and (max-width:1010px)
+		{
+			background:rgba(0,0,0,.8);
 		}
 		&.jh-top-dark {
 			background:#000;
@@ -86,6 +131,14 @@ body.body-main {
 			float:right;
 			display:inline-block;
 			margin-right:25px;
+
+			@media screen and (max-width:1010px)
+			{
+				display:block;
+				float:none;
+				margin:0 auto;
+				width:540px;
+			}
 			ul {
 				float:right;
 				display:inline-block;
@@ -99,6 +152,12 @@ body.body-main {
 					line-height:65px;
 					text-align:center;
 					a {
+						padding:5px 20px 5px 20px;
+						@media screen and (max-width:1250px)
+						{
+							margin:0;
+							padding:5px 15px;
+						}
 						color:#5BF;
 						font-size:20px;
 						line-height:54px;
@@ -168,6 +227,13 @@ body.body-main {
 	.jh-section {
 		padding:95px 0;
 
+		@media screen and (max-width:1250px)
+		{
+			.row > div > img {
+				max-width:100%;
+			}
+		}
+
 		&.section-extra-padding {
 			padding:105px 0;
 		}
@@ -224,11 +290,30 @@ body.body-main {
 					}
 					a {
 						margin-right:30px;
+						white-space:nowrap;
 					}
 				}
 
 				.btn-blue {
 					float:left;
+				}
+
+				@media screen and (max-width:1200px)
+				{
+					a.btn-blue {
+						display:block;
+						float:none;
+						margin:0 auto;
+						width:185px;
+						text-align:center;
+					}
+					p span.r5-login-info {
+						display:block;
+						float:none;
+						margin:10px auto 0;
+						width:310px;
+						text-align:center;
+					}
 				}
 
 				p {
@@ -237,7 +322,7 @@ body.body-main {
 						float:left;
 						padding:12px 15px;
 						background:#EEF3F8;
-						transition:all 1s;
+						.transition(all 1s);
 						span {
 							display:inline-block;
 							padding:3px 0;
@@ -245,7 +330,7 @@ body.body-main {
 								margin-right:10px;
 								padding-right:10px;
 								border-right:2px #D0E0F0 solid;
-								transition:all 1s;
+								.transition(all 1s);
 							}
 						}
 					}
@@ -260,10 +345,37 @@ body.body-main {
 				}
 			}
 		}
+		&#section-1 {
+			@media screen and (max-width:1400px)
+			{
+				.row > div > img {
+					max-width:100%;
+				}
+			}
+			@media screen and (max-width:1200px)
+			{
+				.row > div > img {
+					margin-top:50px;
+				}
+			}
+
+			@media screen and (max-width:992px)
+			{
+				.row > div > img {
+					margin:0 auto 55px;
+				}
+			}
+		}
 		&#section-2 {
 			.container {
 				opacity:0;
 				filter:alpha(opacity=0);
+			}
+			@media screen and (max-width:992px)
+			{
+				.row > div > img {
+					margin-top:55px;
+				}
 			}
 		}
 		&#section-3 {
@@ -290,6 +402,11 @@ body.body-main {
 				width:200px;
 				border-color:#456;
 				border-width:2px 0 0;
+
+				@media screen and (max-width:1200px)
+				{
+					margin-bottom:45px;
+				}
 			}
 			div.container {
 				position:relative;
@@ -310,7 +427,7 @@ body.body-main {
 							padding:0;
 							height:230px;
 							border:1px transparent solid;
-							transition:all .3s;
+							.transition(all .3s);
 							> span {
 								position:absolute;
 								display:block;
@@ -326,13 +443,13 @@ body.body-main {
 								opacity:0;
 								filter:alpha(opacity=0);
 								z-index:0;
-								transition:all .3s;
+								.transition(all .3s);
 							}
 							img {
 								position:relative;
 								margin:0 auto;
 								//max-width:290px;
-								transition:all .3s;
+								.transition(all .3s);
 								z-index:1;
 								opacity:.7;
 								filter:alpha(opacity=70);
@@ -410,6 +527,20 @@ body.body-main {
 			background:#05C;
 			background-image:radial-gradient(1500px at 0 0, #0AF 0%, #05C 100%);
 			text-align:left;
+			overflow:hidden;
+
+			@media screen and (max-width:1300px)
+			{
+				height:650px;
+			}
+			@media screen and (max-width:1150px)
+			{
+				height:550px;
+			}
+			@media screen and (max-width:992px)
+			{
+				height:850px;
+			}
 			.container {
 				height:100%;
 				opacity:1;
@@ -420,6 +551,23 @@ body.body-main {
 						position:relative;
 						top:50%;
 						height:200px;
+
+						@media screen and (max-width:1150px)
+						{
+							top:47.5%;
+						}
+						@media screen and (max-width:992px)
+						{
+							top:10% !important;
+							> div.outer-exp-display {
+								top:0 !important;
+								text-align:center !important;
+								h3 {
+									margin-left:80px !important;
+									float:left !important;
+								}
+							}
+						}
 						> div.outer-exp-display {
 							position:relative;
 							margin:0 auto;
@@ -431,7 +579,7 @@ body.body-main {
 								margin:0 0 16px;
 								color:#FFF;
 								border-bottom:1px #0AF solid;
-								box-shadow:0 8px 15px -10px rgba(0,128,255,.4);
+								.box-shadow(0 8px 15px -10px rgba(0,128,255,.4));
 								font-size:36px;
 								text-transform:uppercase;
 								letter-spacing:4px;
@@ -454,7 +602,33 @@ body.body-main {
 						}
 					}
 					div#highlight-images-outer {
-						margin-top:40px;
+						margin-top:55px;
+
+						@media screen and (max-width:1300px)
+						{
+							margin-top:10px;
+						}
+						@media screen and (max-width:1150px)
+						{
+							margin-top:-10px;
+						}
+						@media screen and (max-width:992px)
+						{
+							position:relative;
+							margin:0;
+							top:80px;
+							left:10%;
+						}
+						@media screen and (max-width:650px)
+						{
+							left:5%;
+						}
+						@media screen and (max-width:565px)
+						{
+							top:110px;
+							left:0%;
+						}
+
 						#highlight-images {
 							img {
 								position:absolute;
@@ -465,7 +639,7 @@ body.body-main {
 								&.tool-image {
 								}
 								&.down-btn {
-									transition:all .3s;
+									.transition(all .3s);
 								}
 							}
 							&:hover {

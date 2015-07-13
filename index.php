@@ -42,7 +42,7 @@
 <section class="jh-section highlight-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<div class="outer-exp-display">
 					<h1>Front End Developer</h1>
 					<h3><i class="fa fa-check-circle-o"></i> 7 Years Practical Experience</h3>
@@ -50,7 +50,7 @@
 					<h3><i class="fa fa-check-circle-o"></i> 7 Months Work Experience</h3>
 				</div>
 			</div>
-			<div class="col-lg-6" id="highlight-images-outer">
+			<div class="col-md-6" id="highlight-images-outer">
 				<a href="#" id="highlight-images" class="test">
 					<img src="images/down-arrow.png" class="down-btn">
 					<img src="images/tool2.png" class="tool-image" alt="Portfolio">
@@ -67,7 +67,7 @@
 <section class="jh-section section-extra-padding section-hidden" id="section-0">
 	<div class="container" id="section-0-show">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<h1>Created a New Social Network. From Scratch.</h1>
 				<h2>Using HTML, CSS, JavaScript, PHP, Sphinx, and Linux</h2>
 				<p>
@@ -86,7 +86,7 @@
 					</span>
 				</p>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<img class="display-img" src="images/screen_repfive.png" alt="RepFive">
 			</div>
 		</div>
@@ -95,10 +95,10 @@
 <section class="jh-section jh-section-grey jh-section-short section-extra-padding section-hidden" id="section-1">
 	<div class="container" id="section-1-show">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<img src="images/highlight-screenshots/highlight-two.png" alt="Short Lived Projects">
 			</div>
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<h1>Short Lived Side Projects</h1>
 				<h2>Unfinished projects, but I like to think they look nice.</h2>
 				<p>
@@ -116,7 +116,7 @@
 <section class="jh-section section-extra-padding section-no-padding-bottom" id="section-2">
 	<div class="container" id="section-2-show">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-md-6">
 			<h1>Portfolios</h1>
 			<h2>These are the two portfolios I created to display my work and my strengths.</h2>
 			<p>
@@ -127,7 +127,7 @@
 				You are viewing my current portfolio now!
 			</p>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<img src="images/portfolios.png" alt="Portfolio Screenshots">
 			</div>
 		</div>
@@ -149,37 +149,37 @@
 			</div>
 		</div>
 		<div class="row portfolio-images">
-			<div class="col-lg-4">
+			<div class="col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="repfive_index.php">
 					<span>RepFive</span>
 					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 				</a>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="">
 					<span>This Portfolio</span>
 					<img src="images/highlight-screenshots/new-portfolio.png" alt="Old Portfolio Preview">
 				</a>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="project4.php">
 					<span>Embark</span>
 					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
 				</a>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="comment/">
 					<span>CommentKing</span>
 					<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
 				</a>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="micro.php">
 					<span>UMiami Micro'Canes</span>
 					<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes">
 				</a>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="http://www.servehappy.com" target="_blank">
 					<span>Old Portfolio<span class="link-external-blue"></span></span>
 					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
