@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="style.css" type="text/css">
  <link rel="stylesheet" href="style_menu.css" type="text/css">
 
- <link rel="shortcut icon" href="http://www.repfive.com/favicon.ico">
+<link rel="icon" href="images/icon_small.ico">
 <!--[if IE 8]><link rel="stylesheet" href="ie8.css" type="text/css"><![endif]-->
 <script type="text/javascript" src="index_scroll.js"></script><style type="text/css"></style><!--[if lte IE 7]>
   <meta http-equiv="REFRESH" content="0;url=http://www.repfive.com/unsupported.php">

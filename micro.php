@@ -1,7 +1,8 @@
 <html>
 <head><title>University of Miami Microgravity Team</title>
 <link rel="stylesheet" type="text/css" href="style_micro.css" />
- <link rel="stylesheet" href="style_menu.css" type="text/css"></head>
+<link rel="stylesheet" href="style_menu.css" type="text/css">
+<link rel="icon" href="images/icon_small.ico"></head>
 <body>
 <div class="port-menu">
 <div class="ex-side-bot-outer" style="border-radius:0 5px 5px 0;-webkit-border-radius:0 5px 5px 0;-moz-border-radius:0 5px 5px 0;">

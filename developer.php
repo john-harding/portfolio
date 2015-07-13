@@ -9,6 +9,7 @@
  <link rel="stylesheet" href="account.css" type="text/css">
  <link rel="stylesheet" href="style_menu.css" type="text/css">
  <link rel="stylesheet" href="connect_css.css" type="text/css">
+ <link rel="icon" href="images/icon_small.ico">
  <script type="text/javascript">var form_submitted = false;</script><style type="text/css"></style>
  <script type="text/javascript" src="R5.js"></script>
 <meta name="description" content="Learn about the benefits RepFive can offer your website."> 

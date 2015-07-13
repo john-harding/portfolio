@@ -3,6 +3,7 @@
 <title>Title</title>
 <link rel="stylesheet" type="text/css" href="style_4.css" />
 <link rel="stylesheet" type="text/css" href="style_menu.css" />
+<link rel="icon" href="images/icon_small.ico">
 </head>
 
 <body>

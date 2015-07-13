@@ -32,7 +32,7 @@
 
 </style>
 <![endif]-->
- <link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="images/icon_small.ico">
 
  <script type="text/javascript">var form_submitted = false;
   /* ***new*** */ fb_bool = false;

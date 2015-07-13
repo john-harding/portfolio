@@ -8,7 +8,8 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" href="ck_style.css" />
 
- <link rel="stylesheet" href="../style_menu.css" type="text/css">
+<link rel="stylesheet" href="../style_menu.css" type="text/css">
+<link rel="icon" href="../images/icon_small.ico">
 </head>
 <body>
 <div class="port-menu">
