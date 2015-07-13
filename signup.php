@@ -48,7 +48,7 @@
 <div class="ex-side-bottom">
 <div class="ex-page-info">
 <div class="ex-page-title">RepFive Sign Up Page</div>
-<div class="ex-page-descr">The sign up page for RepFive.  The actual repfive.com version will be updated to this in October 2014.</div>
+<div class="ex-page-descr">The sign up page for RepFive.</div>
 </div>
 <ul>
 	<li><a href="/developer.php" class="direction-btn">Previous</a><a href="/micro.php" class="direction-btn">Next</a></li>

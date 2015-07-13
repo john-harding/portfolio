@@ -12,14 +12,14 @@
 </head>
 <body>
 <div class="port-menu">
-<div class="ex-side-top">I have just started working on this project.</div>
+<div class="ex-side-top">Project has been put on hold.</div>
 <div class="ex-side-bot-outer">
 <div class="ex-side-ribbon"></div>
 <div class="ex-side-middle">Menu</div>
 <div class="ex-side-bottom">
 <div class="ex-page-info">
 <div class="ex-page-title">CommentKing</div>
-<div class="ex-page-descr">A free commenting system I have just started working on.</div>
+<div class="ex-page-descr">A free commenting system.</div>
 </div>
 <ul>
 	<li><a href="../repfive_index.php" class="direction-btn">Previous</a><a href="../developer.php" class="direction-btn">Next</a></li>

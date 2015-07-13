@@ -14,7 +14,6 @@
 <ul>
 	<li><a href="/signup.php" class="direction-btn">Previous</a><a href="/project4.php" class="direction-btn">Next</a></li>
 	<li><a href="/">Portfolio Home</a></li>
-	<li><a href="http://www.repfive.com/john" target="_blank">RepFive.com<span class="link_external"></span></a></li>
 </ul>
 </div></div></div>
 <div class="top-bar"><div class="top-bar-inner"><div class="top-title"><img src="micro_logo.png" /></div></div></div>

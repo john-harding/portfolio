@@ -24,7 +24,7 @@
 <div class="ex-side-bottom">
 <div class="ex-page-info">
 <div class="ex-page-title">RepFive</div>
-<div class="ex-page-descr">A new social network I have created.  Follow users and categories.  Post in categories.  The actual repfive.com version will be updated to this in October 2014.</div>
+<div class="ex-page-descr">A new social network I have created.  Follow users and categories.  Post in categories.</div>
 </div>
 <ul>
 	<li><a href="/project4.php" class="direction-btn">Previous</a><a href="/comment/" class="direction-btn">Next</a></li>

@@ -75,15 +75,15 @@
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
 		var portObj = document.getElementById("section-3");
 		var elemHeight = portObj.getBoundingClientRect().top;
-		var goToHeight = elemHeight + currentPos - 69; // 69 is height of top header bar
+		var goToPos = elemHeight + currentPos - 69; // 69 is height of top header bar
 		var increment = 100;
 
-		if((currentPos + increment) < goToHeight)
+		if((currentPos + increment) < goToPos)
 		{
 			window.scrollTo( 0 , currentPos + increment );
 			setTimeout(function(){scrollToPortfolio();},30);
 		} else {
-			window.scrollTo( 0 , goToHeight );
+			window.scrollTo( 0 , goToPos );
 		}
 	}
 	document.getElementById("highlight-images").onclick = function(event){event.preventDefault();scrollToPortfolio();};
