@@ -1,0 +1,135 @@
+ html,body {
+  margin:0;
+  padding:0;
+  }
+
+ .top-bar {
+  position:fixed;
+  float:left;
+  width:100%;
+  height:50px;
+  background:#222;
+  border-bottom:5px #06d solid;
+  z-index:1;
+  }
+
+ .top-bar-inner {
+  margin:0 auto;
+  width:1000px;
+  }
+
+ .logo {
+  height:50px;
+  color:#07d;
+  font:bold 30px 'Segoe UI',Arial,Helvetica,sans-serif;
+  line-height:48px;
+  text-shadow:1px 1px #000;
+  text-decoration:none;
+  }
+
+ .first-display {
+  margin:0 auto;
+  width:1000px;
+  }
+
+ .first-display-inner {
+  position:absolute;
+  bottom:0;
+  width:1000px;
+  box-sizing:border-box;
+  color:#FFF;
+  background:#000;
+  opacity:.83;
+  }
+
+ .display-inner-hold2 {
+  padding:35px;
+  }
+
+ .display-inner-hold2 h1 {
+  margin-top:0px;
+  }
+
+ .second-display {
+  position:relative;
+  float:left;
+  margin-top:50px;
+  width:100%;
+  height:650px;
+  color:#FFF;
+  overflow:hidden;
+  font:normal 25px Arial,Helvetica,sans-serif;
+  text-shadow:1px 1px #000;
+  }
+
+ .image-back {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:url("starry.png") no-repeat top right;
+  }
+
+ .image-back2 {
+  left:100%;
+  }
+
+ .left_arr,.right_arr {
+  position:absolute;
+  top:250px;
+  width:35px;
+  height:100px;
+  opacity:.65;
+  }
+
+ .left_arr:hover,.right_arr:hover {
+  opacity:.9;
+  }
+
+ .left_arr {
+  left:25px;
+  background:url('left.png') no-repeat;
+  }
+
+ .right_arr {
+  right:25px;
+  background:url('right.png') no-repeat;
+  }
+
+ .second-display-inner {
+  margin:50px 0;
+  padding:30px 0;
+  width:100%;
+  background:#07E;
+  opacity:.9;
+  }
+
+ .display-inner-hold {
+  margin:0 auto;
+  width:1000px;
+  }
+
+ .second-display h1 {
+  font-size:25px;
+  }
+
+ .second-display h2 {
+  font-size:16px;
+  font-weight:bold;
+  }
+
+ .black-display {
+  float:left;
+  width:100%;
+  height:700px;
+  background:#111;
+  border-top:3px #000 solid;
+  }
+
+ .loader-image {
+  display:block;
+  position:absolute;
+  bottom:0;
+  height:10px;
+  width:0%;
+  background:#09E;
+  }

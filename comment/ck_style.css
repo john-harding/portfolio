@@ -1,0 +1,65 @@
+#ck-comments {
+  position:relative;
+  display:block;
+  width:700px;
+  }
+
+.ck-edit {
+  padding:7px;
+  width:684px;
+  height:100px;
+  color:#DDD;
+  border:1px #888 solid;
+  outline:0;
+  transition:all .35s;
+  }
+
+.ck-edit:hover {
+  border-color:#CCC;
+  }
+
+.ck-edit:focus {
+  border-color:#FAADFA;
+  color:#FFF;
+  }
+
+#ck-comments .ck-placeholder {
+  position:absolute;
+  top:8px;
+  left:8px;
+  color:#fff;
+  }
+
+.ck-controls {
+  margin-top:15px;
+  }
+
+.ck-max-char {
+  color:#AAA;
+  transition:all .35s;
+  }
+
+.ck-post-btn {
+  display:inline-block;
+  float:right;
+  padding:9px 18px;
+  color:#888;
+  border:1px #777 solid;
+  font-weight:bold;
+  text-decoration:none;
+  transition:all .35s;
+  cursor:pointer;
+  }
+
+.ck-clear-fix {
+  clear:both;
+  }
+
+.ck-reply-outer {
+  margin:15px 0 0;
+  padding:25px 0;
+  width:100%;
+  color:#fff;
+  border:1px #faf solid;
+  text-align:center;
+  }
