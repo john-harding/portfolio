@@ -3,13 +3,15 @@
 
 	// array of all sections that will pop up and gain opacity on scroll by
 	// format : [section ID, is it currently visible?, marginTop to start at when popping up,should this pop up?,increase opacity amount for every iteration]
-	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015],["section-2",false,300,true,1]]; 
+	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015],["section-2",false,300,true,1]];
+	var sectionEnabled = true;
 
 	window.onscroll = function () {
 		var returnDoc = getDocInfo();
 		var docHeight = returnDoc[0];
 		var docInnerHt = returnDoc[1];
 		var paralax = document.getElementsByClassName("paralax-bg");
+		var tempSectionVisible = true;
 
 		// get the current scroll position
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
@@ -19,31 +21,35 @@
 		var jshTopBarHt = 65; // height of the header bar
 
 		// loop through each of the sections we are going to pop up ** may want to splice off sections that have already been popped up
-		for(var i = 0;i < sectionList.length;i++)
+		if(sectionEnabled)
 		{
-			//window.console.log(i);
-			var tempObj = document.getElementById(sectionList[i][0]);// get the element we are using to determine when to pop up
-			var tempObj2 = document.getElementById(sectionList[i][0]+"-show");  // get the element that will be popped up (it is a child of tempObj)
-			var tempTop = tempObj.getBoundingClientRect().top;
-			//window.console.log(tempTop);
-			if(!sectionList[i][1] && (docInnerHt - sectionList[i][2]) > tempTop && currentPos > sectionList[i][2])
+			for(var i = 0;i < sectionList.length;i++)
 			{
-				sectionList[i][1] = true;
-				easeShow(tempObj2,0,sectionList[i][4]);
-				if(sectionList[i][3])
+				tempSectionVisible = (tempSectionVisible && sectionList[i][1]) ? true : false;
+				//window.console.log(i);
+				var tempObj = document.getElementById(sectionList[i][0]);// get the element we are using to determine when to pop up
+				var tempObj2 = document.getElementById(sectionList[i][0]+"-show");  // get the element that will be popped up (it is a child of tempObj)
+				var tempTop = tempObj.getBoundingClientRect().top;
+				//window.console.log(tempTop);
+				if(!sectionList[i][1] && (docInnerHt - sectionList[i][2]) > tempTop && currentPos > sectionList[i][2])
 				{
-					easeUp(tempObj2,80);
+					sectionList[i][1] = true;
+					easeShow(tempObj2,0,sectionList[i][4]);
+					if(sectionList[i][3])
+					{
+						easeUp(tempObj2,80);
+					}
+					break;
 				}
-				break;
 			}
+			sectionEnabled = !tempSectionVisible;
 		}
 		for(var i2=0;i2 < paralax.length;i2++)
 		{
 			var tempTop2 = paralax[i2].getBoundingClientRect().top;
 			if(tempTop2 <= (docInnerHt))
 			{
-				console.log("here");
-				paralax[i2].style.backgroundPosition = "center "+(-Math.round((docInnerHt-600-tempTop2)/1.5))+"px";
+				paralax[i2].style.backgroundPosition = "center "+(-Math.round((docInnerHt-600-tempTop2)/1.75))+"px";
 			}
 		}
 
@@ -63,10 +69,31 @@
 		}
 	};
 
+	function scrollToPortfolio()
+	{
+		
+		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
+		var portObj = document.getElementById("section-3");
+		var elemHeight = portObj.getBoundingClientRect().top;
+		var goToHeight = elemHeight + currentPos - 69; // 69 is height of top header bar
+		var increment = 100;
+
+		if((currentPos + increment) < goToHeight)
+		{
+			window.scrollTo( 0 , currentPos + increment );
+			setTimeout(function(){scrollToPortfolio();},30);
+		} else {
+			window.scrollTo( 0 , goToHeight );
+		}
+	}
+	document.getElementById("highlight-images").onclick = function(event){event.preventDefault();scrollToPortfolio();};
+	document.getElementById("full-portfolio-link").onclick = function(event){event.preventDefault();scrollToPortfolio();};
+
 	window.onload = function() {
 		var obj = document.getElementById("highlight-images");
 		var children = obj.children;
 		var elemPositions = [
+			[236,295],
 			[86,62], //[10,-13],
 			[125,125],
 			[140,140],

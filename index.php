@@ -26,7 +26,7 @@
 	<a href="./"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
 	<nav>
 		<ul>
-			<li><a href="#">Full Portfolio</a></li>
+			<li><a href="#" id="full-portfolio-link" class="test">Full Portfolio</a></li>
 			<li><a href="John-Harding-Resume.html">Resum&#233;</a>
 				<ul class="sub-resume">
 					<li><a href="John-Harding-Resume.html">HTML</a></li>
@@ -51,8 +51,9 @@
 				</div>
 			</div>
 			<div class="col-lg-6" id="highlight-images-outer">
-				<a href="#" id="highlight-images">
-					<img src="images/tool2.png" class="tool-image" alt="Key Words">
+				<a href="#" id="highlight-images" class="test">
+					<img src="images/down-arrow.png" class="down-btn">
+					<img src="images/tool2.png" class="tool-image" alt="Portfolio">
 					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
 					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
@@ -75,7 +76,7 @@
 				</p>
 				<p class="p-new-repfive">
 					<span>Preview the most recent version:</span><br />
-					<a href=""><strong>Improved Feed</strong></a><a href=""><strong>New Signup Page</strong></a><a href=""><strong>New Developer Page</strong></a>
+					<a href="repfive_index.php"><strong>Improved Feed</strong></a><a href="signup.php"><strong>New Signup Page</strong></a><a href="developer.php"><strong>New Developer Page</strong></a>
 				</p>
 				<p class="no-margin">
 					<a class="btn-blue" href="http://www.repfive.com/login.php" target="_blank"><strong>Current Version <span class="link-external-blue external-white"></span></strong></a>
@@ -101,11 +102,11 @@
 				<h1>Short Lived Side Projects</h1>
 				<h2>Unfinished projects, but I like to think they look nice.</h2>
 				<p>
-					<a href="#">CommentKing</a> was started when I began applying for jobs in late 2014.  I took a job with Qualtrics one to two weeks after
+					<a href="comment/">CommentKing</a> was started when I began applying for jobs in late 2014.  I took a job with Qualtrics one to two weeks after
 					starting, so it was sidelined. (Late Oct to Early November of 2014)
 				</p>
 				<p>
-					<a href="#">Embark</a> was created in response to a friends idea that has since been put on hold.  I spent one night
+					<a href="project4.php">Embark</a> was created in response to a friends idea that has since been put on hold.  I spent one night
 					(granted, it was the whole night) on the project. (May 2014)
 				</p>
 			</div>
@@ -149,7 +150,7 @@
 		</div>
 		<div class="row portfolio-images">
 			<div class="col-lg-4">
-				<a class="outer-portfolio-image" href="">
+				<a class="outer-portfolio-image" href="repfive_index.php">
 					<span>RepFive</span>
 					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 				</a>
@@ -157,29 +158,29 @@
 			<div class="col-lg-4">
 				<a class="outer-portfolio-image" href="">
 					<span>This Portfolio</span>
-					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
+					<img src="images/highlight-screenshots/new-portfolio.png" alt="Old Portfolio Preview">
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a class="outer-portfolio-image" href="">
-					<span>Project 3</span>
+				<a class="outer-portfolio-image" href="project4.php">
+					<span>Embark</span>
 					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a class="outer-portfolio-image" href="">
+				<a class="outer-portfolio-image" href="comment/">
 					<span>CommentKing</span>
 					<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a class="outer-portfolio-image" href="">
+				<a class="outer-portfolio-image" href="micro.php">
 					<span>UMiami Micro'Canes</span>
 					<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes">
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a class="outer-portfolio-image" href="">
+				<a class="outer-portfolio-image" href="http://www.servehappy.com" target="_blank">
 					<span>Old Portfolio</span>
 					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
 				</a>
@@ -187,13 +188,18 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section section-extra-padding" id="section-4">
+<section class="jh-section section-extra-padding jh-section-dark" id="section-4">
 	<div class="container" id="section-4-show">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-12">
 			<h1>About Me</h1>
+			<hr>
+			<p>I graduated from the University of Miami in 2014.  Outside of coding, I love lifting weights, playing basketball, and exercising. 
+			Before and after work you'll find me in the gym shooting hoops and repeatedly lifting heavy objects for fun.</p>
+			<p>Recruiters and companies can get in touch with me at <a href="mailto:jsh.miami@gmail.com">jsh.miami@gmail.com</a>.</p>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-12">
+				<img src="images/activities.png" alt="Old Portfolio Preview">
 			</div>
 		</div>
 	</div>

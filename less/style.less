@@ -8,6 +8,9 @@ html,body {
 }
 
 body.body-main {
+	i {
+		font-family:FontAwesome!important;
+	}
 	&.body-resume {
 		header {
 			background:#000;
@@ -70,6 +73,12 @@ body.body-main {
 				}
 				.logo-light {
 					display:none;
+				}
+			}
+			.sub-resume{
+				padding:40px 0 0 !important;
+				&:before {
+					top:10px !important;
 				}
 			}
 		}
@@ -170,6 +179,32 @@ body.body-main {
 			.container {
 				opacity:0;
 				filter:alpha(opacity=0);
+			}
+		}
+		&.jh-section-dark {
+			color:#FFF;
+			background:#10151A;
+
+			h1 {
+				margin-bottom:0;
+				color:#FFF;
+				text-align:center;
+				letter-spacing:8px;
+			}
+			hr {
+				margin:28px auto 29px;
+				width:200px;
+				border-color:#456;
+				border-width:2px 0 0;
+			}
+			p {
+				margin:0 auto 25px;
+				line-height:35px;
+				max-width:850px;
+				text-align:center;
+			}
+			img {
+				padding:55px 0 0;
 			}
 		}
 
@@ -420,13 +455,23 @@ body.body-main {
 					}
 					div#highlight-images-outer {
 						margin-top:40px;
-						img {
-							position:absolute;
-							top:0;
-							left:0;
-							opacity:0;
-							filter:alpha(opacity=0);
-							&.tool-image {
+						#highlight-images {
+							img {
+								position:absolute;
+								top:0;
+								left:0;
+								opacity:0;
+								filter:alpha(opacity=0);
+								&.tool-image {
+								}
+								&.down-btn {
+									transition:all .3s;
+								}
+							}
+							&:hover {
+								.down-btn {
+									top:345px !important;
+								}
 							}
 						}
 					}

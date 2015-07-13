@@ -10,6 +10,9 @@ body.body-main {
   margin: 0;
   padding: 0;
 }
+body.body-main i {
+  font-family: FontAwesome!important;
+}
 body.body-main.body-resume header {
   background: #000;
 }
@@ -66,6 +69,12 @@ body.body-main header.jh-top-dark a .logo-dark {
 }
 body.body-main header.jh-top-dark a .logo-light {
   display: none;
+}
+body.body-main header.jh-top-dark .sub-resume {
+  padding: 40px 0 0 !important;
+}
+body.body-main header.jh-top-dark .sub-resume:before {
+  top: 10px !important;
 }
 body.body-main header nav {
   float: right;
@@ -160,6 +169,31 @@ body.body-main .jh-section.section-no-padding-bottom {
 body.body-main .jh-section.section-hidden .container {
   opacity: 0;
   filter: alpha(opacity=0);
+}
+body.body-main .jh-section.jh-section-dark {
+  color: #FFF;
+  background: #10151A;
+}
+body.body-main .jh-section.jh-section-dark h1 {
+  margin-bottom: 0;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 8px;
+}
+body.body-main .jh-section.jh-section-dark hr {
+  margin: 28px auto 29px;
+  width: 200px;
+  border-color: #456;
+  border-width: 2px 0 0;
+}
+body.body-main .jh-section.jh-section-dark p {
+  margin: 0 auto 25px;
+  line-height: 35px;
+  max-width: 850px;
+  text-align: center;
+}
+body.body-main .jh-section.jh-section-dark img {
+  padding: 55px 0 0;
 }
 body.body-main .jh-section#section-0 .container .p-new-repfive {
   margin: 0 0 22px;
@@ -392,12 +426,18 @@ body.body-main .jh-section.highlight-section .container .row div:first-child > d
 body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer {
   margin-top: 40px;
 }
-body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer img {
+body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer #highlight-images img {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   filter: alpha(opacity=0);
+}
+body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer #highlight-images img.down-btn {
+  transition: all .3s;
+}
+body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer #highlight-images:hover .down-btn {
+  top: 345px !important;
 }
 body.body-main .link-external {
   display: inline-block;
