@@ -118,7 +118,7 @@
 		<div class="row">
 			<div class="col-md-6">
 			<h1>Portfolios</h1>
-			<h2>These are the two portfolios I created to display my work and my strengths.</h2>
+			<h2>These are the two portfolios I created to display my work and strengths.</h2>
 			<p>
 				See my old portfolio <a href="http://www.servehappy.com/" target="_blank">here<span class="link-external-blue"></span></a>.  I created it in October 2014 before I started 
 				applying for jobs.
