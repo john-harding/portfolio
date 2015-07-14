@@ -83,7 +83,12 @@ body.body-main {
 				@media screen and (max-width:1250px)
 				{
 					padding-top:5px;
-					width:400px;
+					width:100%;
+					max-width:400px;
+				}
+				@media screen and (max-width:420px)
+				{
+					padding:5px 10px 0;
 				}
 			}
 		}
@@ -94,7 +99,8 @@ body.body-main {
 			> a {
 				display:block;
 				margin:0 auto;
-				width:400px;
+				padding-left:0;
+				max-width:400px;
 			}
 		}
 		&.jh-top-light {
@@ -139,18 +145,38 @@ body.body-main {
 				margin:0 auto;
 				width:540px;
 			}
+			@media screen and (max-width:550px)
+			{
+				width:100%;
+			}
 			ul {
 				float:right;
 				display:inline-block;
 				margin:0;
 				padding:0;
 				list-style-type:none;
+				@media screen and (max-width:550px)
+				{
+					display:block;
+					float:none;
+					text-align:center;
+					li:first-child {
+						display:none;
+					}
+				}
+				@media screen and (max-width:415px)
+				{
+					li:last-child {
+						display:none;
+					}
+				}
 				li {
 					position:relative;
 					display:inline-block;
 					vertical-align:top;
 					line-height:65px;
 					text-align:center;
+
 					a {
 						padding:5px 20px 5px 20px;
 						@media screen and (max-width:1250px)
@@ -291,6 +317,13 @@ body.body-main {
 					a {
 						margin-right:30px;
 						white-space:nowrap;
+
+						@media screen and (max-width:550px)
+						{
+							display:block;
+							margin:15px 0;
+							text-align:center;
+						}
 					}
 				}
 
@@ -523,7 +556,6 @@ body.body-main {
 		}
 		&.highlight-section {
 			height:800px;
-			min-height:600px;
 			background:#05C;
 			background-image:radial-gradient(1500px at 0 0, #0AF 0%, #05C 100%);
 			text-align:left;
@@ -540,6 +572,10 @@ body.body-main {
 			@media screen and (max-width:992px)
 			{
 				height:850px;
+			}
+			@media screen and (max-width:550px)
+			{
+				height:540px;
 			}
 			.container {
 				height:100%;
@@ -565,6 +601,26 @@ body.body-main {
 								h3 {
 									margin-left:80px !important;
 									float:left !important;
+									text-align:left;
+								}
+							}
+						}
+						@media screen and (max-width:550px)
+						{
+							> div.outer-exp-display {
+								top:10% !important;
+								h3 {
+									margin-left:40px !important;
+								}
+							}
+						}
+						@media screen and (max-width:450px)
+						{
+							> div.outer-exp-display {
+								top:10% !important;
+								h3 {
+									margin-left:20px !important;
+									font-size:18px !important;
 								}
 							}
 						}
@@ -583,6 +639,11 @@ body.body-main {
 								font-size:36px;
 								text-transform:uppercase;
 								letter-spacing:4px;
+
+								@media screen and (max-width:450px)
+								{
+									font-size:26px;
+								}
 							}
 							i {
 								margin-right:20px;
@@ -629,6 +690,10 @@ body.body-main {
 							left:0%;
 						}
 
+						@media screen and (max-width:550px)
+						{
+							display:none;
+						}
 						#highlight-images {
 							img {
 								position:absolute;

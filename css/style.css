@@ -61,14 +61,22 @@ body.body-main header a .logo-dark {
   body.body-main header a > img.logo-dark,
   body.body-main header a > img.logo-light {
     padding-top: 5px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  body.body-main header a > img.logo-dark,
+  body.body-main header a > img.logo-light {
+    padding: 5px 10px 0;
   }
 }
 @media screen and (max-width: 1010px) {
   body.body-main header > a {
     display: block;
     margin: 0 auto;
-    width: 400px;
+    padding-left: 0;
+    max-width: 400px;
   }
 }
 body.body-main header.jh-top-light {
@@ -113,12 +121,32 @@ body.body-main header nav {
     width: 540px;
   }
 }
+@media screen and (max-width: 550px) {
+  body.body-main header nav {
+    width: 100%;
+  }
+}
 body.body-main header nav ul {
   float: right;
   display: inline-block;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media screen and (max-width: 550px) {
+  body.body-main header nav ul {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  body.body-main header nav ul li:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 415px) {
+  body.body-main header nav ul li:last-child {
+    display: none;
+  }
 }
 body.body-main header nav ul li {
   position: relative;
@@ -254,6 +282,13 @@ body.body-main .jh-section#section-0 .container .p-new-repfive span {
 body.body-main .jh-section#section-0 .container .p-new-repfive a {
   margin-right: 30px;
   white-space: nowrap;
+}
+@media screen and (max-width: 550px) {
+  body.body-main .jh-section#section-0 .container .p-new-repfive a {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+  }
 }
 body.body-main .jh-section#section-0 .container .btn-blue {
   float: left;
@@ -469,7 +504,6 @@ body.body-main .jh-section.jh-section-short h2 {
 }
 body.body-main .jh-section.highlight-section {
   height: 800px;
-  min-height: 600px;
   background: #05C;
   background-image: radial-gradient(1500px at 0 0, #00aaff 0%, #0055cc 100%);
   text-align: left;
@@ -488,6 +522,11 @@ body.body-main .jh-section.highlight-section {
 @media screen and (max-width: 992px) {
   body.body-main .jh-section.highlight-section {
     height: 850px;
+  }
+}
+@media screen and (max-width: 550px) {
+  body.body-main .jh-section.highlight-section {
+    height: 540px;
   }
 }
 body.body-main .jh-section.highlight-section .container {
@@ -519,6 +558,24 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
     margin-left: 80px !important;
     float: left !important;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 550px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
+    top: 10% !important;
+  }
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
+    margin-left: 40px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
+    top: 10% !important;
+  }
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
+    margin-left: 20px !important;
+    font-size: 18px !important;
   }
 }
 body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
@@ -539,6 +596,11 @@ body.body-main .jh-section.highlight-section .container .row div:first-child > d
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+@media screen and (max-width: 450px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1 {
+    font-size: 26px;
+  }
 }
 body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display i {
   margin-right: 20px;
@@ -585,6 +647,11 @@ body.body-main .jh-section.highlight-section .container .row div#highlight-image
   body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer {
     top: 110px;
     left: 0%;
+  }
+}
+@media screen and (max-width: 550px) {
+  body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer {
+    display: none;
   }
 }
 body.body-main .jh-section.highlight-section .container .row div#highlight-images-outer #highlight-images img {
