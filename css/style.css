@@ -563,7 +563,7 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
 }
 @media screen and (max-width: 550px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
-    top: 28% !important;
+    top: 25% !important;
   }
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
     margin-left: 40px !important;
@@ -571,11 +571,16 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
 }
 @media screen and (max-width: 450px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
-    top: 10% !important;
+    top: 30% !important;
   }
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
     margin-left: 20px !important;
     font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
+    top: 23% !important;
   }
 }
 body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
