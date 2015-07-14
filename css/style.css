@@ -563,7 +563,7 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
 }
 @media screen and (max-width: 550px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
-    top: 10% !important;
+    top: 28% !important;
   }
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
     margin-left: 40px !important;
