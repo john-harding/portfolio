@@ -47,7 +47,7 @@
 					<h1>Front End Developer</h1>
 					<h3><i class="fa fa-check-circle-o"></i> 7 Years Practical Experience</h3>
 					<h3><i class="fa fa-check-circle-o"></i> 1.75 Years Personal Work Experience</h3>
-					<h3><i class="fa fa-check-circle-o"></i> 7 Months Work Experience</h3>
+					<h3><i class="fa fa-check-circle-o"></i> 8 Months Work Experience</h3>
 				</div>
 			</div>
 			<div class="col-md-6" id="highlight-images-outer">
