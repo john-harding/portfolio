@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>John Harding Jr's Portfolio</title>
 <!-- Custom CSS - Compiled from LESS -->
-<link rel="stylesheet" href="css/style.css?v=0.0.0" type="text/css">
+<link rel="stylesheet" href="css/style.css?v=1.0.0" type="text/css">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -200,6 +200,6 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="js/scripts.js?v=0.0.0"></script>
+<script type="text/javascript" src="js/scripts.js?v=1.0.0"></script>
 </body>
 </html>
