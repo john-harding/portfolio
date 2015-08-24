@@ -96,6 +96,9 @@
 	//document.getElementById("full-portfolio-link").onclick = function(event){event.preventDefault();scrollToPortfolio();};
 	document.getElementById("btn-main").onclick = function(event){event.preventDefault();scrollToPortfolio();};
 
+	window.onload = function() {
+		document.getElementById("outer-exp-display").className = "outer-exp-display show";
+	}
 /*	// this shows the portfolio images one by one
 	window.onload = function() {
 		var obj = document.getElementById("highlight-images");
