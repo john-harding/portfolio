@@ -6,19 +6,26 @@
 	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015],["section-2",false,300,true,1]];
 	var sectionEnabled = true;
 
+	var jshHighlightHt = document.getElementsByClassName("highlight-section")[0].offsetHeight; // get height of highlight section
+
+	var jshTopBarHt = 65; // height of the header bar
+	var returnDoc = getDocInfo();
+	var docHeight = returnDoc[0];
+	var docInnerHt = returnDoc[1];
+	var paralax = document.getElementsByClassName("paralax-bg");
+
+	window.onresize = function () {
+		jshHighlightHt = document.getElementsByClassName("highlight-section")[0].offsetHeight;
+		returnDoc = getDocInfo();
+		docHeight = returnDoc[0];
+		docInnerHt = returnDoc[1];
+	}
 	window.onscroll = function () {
-		var returnDoc = getDocInfo();
-		var docHeight = returnDoc[0];
-		var docInnerHt = returnDoc[1];
-		var paralax = document.getElementsByClassName("paralax-bg");
-		var tempSectionVisible = true;
 
 		// get the current scroll position
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
+		var tempSectionVisible = true;
 
-		var jshHighlightHt = 800; // must match height of .highlight-section in style.css; height of the highlight section
-
-		var jshTopBarHt = 65; // height of the header bar
 
 		// loop through each of the sections we are going to pop up ** may want to splice off sections that have already been popped up
 		if(sectionEnabled)
@@ -48,7 +55,7 @@
 			var tempTop2 = paralax[i2].getBoundingClientRect().top;
 			if(tempTop2 <= (docInnerHt))
 			{
-				paralax[i2].style.backgroundPosition = "center "+(-Math.round((docInnerHt-600-tempTop2)/1.75))+"px";
+				paralax[i2].style.backgroundPositionY = (-Math.round((tempTop2)/1.5))+"px";
 			}
 		}
 
@@ -72,22 +79,24 @@
 	{
 		
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
-		var portObj = document.getElementById("section-3");
+		var portObj = document.getElementById("section-0");
 		var elemHeight = portObj.getBoundingClientRect().top;
 		var goToPos = elemHeight + currentPos - 65; // height of top header bar
-		var increment = 100;
+		var increment = 30;
 
 		if((currentPos + increment) < goToPos)
 		{
 			window.scrollTo( 0 , currentPos + increment );
-			setTimeout(function(){scrollToPortfolio();},30);
+			setTimeout(function(){scrollToPortfolio();},25);
 		} else {
 			window.scrollTo( 0 , goToPos );
 		}
 	}
-	document.getElementById("highlight-images").onclick = function(event){event.preventDefault();scrollToPortfolio();};
-	document.getElementById("full-portfolio-link").onclick = function(event){event.preventDefault();scrollToPortfolio();};
+	//document.getElementById("highlight-images").onclick = function(event){event.preventDefault();scrollToPortfolio();};
+	//document.getElementById("full-portfolio-link").onclick = function(event){event.preventDefault();scrollToPortfolio();};
+	document.getElementById("btn-main").onclick = function(event){event.preventDefault();scrollToPortfolio();};
 
+/*	// this shows the portfolio images one by one
 	window.onload = function() {
 		var obj = document.getElementById("highlight-images");
 		var children = obj.children;
@@ -110,9 +119,9 @@
 			(Math.abs(i-6) * 600));
 		}
 	};
-
+*/
 	// returns the height of the entire document and the viewport
-	var getDocInfo = function() {
+	function getDocInfo() {
 		var body = document.body,docElement = document.documentElement;
 
 		var docHeight = Math.max(body.scrollHeight,body.offsetHeight,docElement.clientHeight,docElement.scrollHeight,docElement.offsetHeight);

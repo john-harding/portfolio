@@ -133,6 +133,13 @@ body.body-main header nav ul {
   padding: 0;
   list-style-type: none;
 }
+@media screen and (max-width: 992px) {
+  body.body-main header nav ul {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 550px) {
   body.body-main header nav ul {
     display: block;
@@ -509,8 +516,9 @@ body.body-main .jh-section.jh-section-short h2 {
 }
 body.body-main .jh-section.highlight-section {
   height: 800px;
-  background: #05C;
-  background-image: radial-gradient(1500px at 0 0, #00aaff 0%, #0055cc 100%);
+  background: #000;
+  background: url('http://i.imgur.com/OGW3jVf.jpg');
+  background-size: cover;
   text-align: left;
   overflow: hidden;
 }
@@ -526,7 +534,7 @@ body.body-main .jh-section.highlight-section {
 }
 @media screen and (max-width: 992px) {
   body.body-main .jh-section.highlight-section {
-    height: 850px;
+    height: 600px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -544,17 +552,17 @@ body.body-main .jh-section.highlight-section .container .row {
 }
 body.body-main .jh-section.highlight-section .container .row div:first-child {
   position: relative;
-  top: 50%;
   height: 200px;
+  top: 20%;
 }
 @media screen and (max-width: 1150px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child {
-    top: 47.5%;
+    top: 15%;
   }
 }
 @media screen and (max-width: 992px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child {
-    top: 10% !important;
+    top: 28% !important;
   }
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
     top: 0 !important;
@@ -568,7 +576,7 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
 }
 @media screen and (max-width: 550px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
-    top: 25% !important;
+    top: 8% !important;
   }
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
     margin-left: 40px !important;
@@ -576,7 +584,7 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
 }
 @media screen and (max-width: 450px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
-    top: 30% !important;
+    top: 8% !important;
   }
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h3 {
     margin-left: 20px !important;
@@ -585,32 +593,103 @@ body.body-main .jh-section.highlight-section .container .row div:first-child {
 }
 @media screen and (max-width: 425px) {
   body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
-    top: 23% !important;
+    top: 8% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child {
+    top: 15% !important;
+  }
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
+    top: 0% !important;
   }
 }
 body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display {
   position: relative;
   margin: 0 auto;
-  top: -60%;
-  max-width: 550px;
+  max-width: 750px;
+  text-align: center;
 }
-body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1 {
-  display: inline-block;
-  padding-bottom: 9px;
-  margin: 0 0 16px;
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1,
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+  display: block;
+  padding: 5px 18px;
+  margin: 0 0 0;
   color: #FFF;
-  border-bottom: 1px #0AF solid;
-  box-shadow: 0 8px 15px -10px rgba(0, 128, 255, 0.4);
-  -moz-box-shadow: 0 8px 15px -10px rgba(0, 128, 255, 0.4);
-  -webkit-box-shadow: 0 8px 15px -10px rgba(0, 128, 255, 0.4);
-  font-size: 36px;
-  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 60px;
+  text-shadow: 1px 1px #20252A;
+  text-transform: none;
+  text-align: center;
   letter-spacing: 4px;
 }
-@media screen and (max-width: 450px) {
-  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1 {
+@media screen and (max-width: 670px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1,
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1,
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 530px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1,
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
     font-size: 26px;
   }
+}
+@media screen and (max-width: 440px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h1,
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 22px;
+  }
+}
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+  margin: 0 0 35px;
+  font-size: 42px;
+  font-weight: 100;
+}
+@media screen and (max-width: 670px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 530px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 440px) {
+  body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display h2 {
+    font-size: 20px;
+  }
+}
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display .btn-main {
+  padding: 15px 35px;
+  border: 1px #08D solid;
+  border-width: 0 1px 1px 0;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #08D;
+  outline: none;
+}
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display .btn-main:hover {
+  text-shadow: none;
+  border-color: #000;
+}
+body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display .btn-main:focus {
+  text-shadow: none;
+  border-color: #000;
 }
 body.body-main .jh-section.highlight-section .container .row div:first-child > div.outer-exp-display i {
   margin-right: 20px;

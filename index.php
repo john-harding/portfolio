@@ -35,7 +35,7 @@
 	<a href="./"><img class="logo-light" src="images/logo-white.png" alt="John Harding Jr's Portfolio"><img class="logo-dark" src="images/logo-blue.png" alt="John Harding Jr's Portfolio"></a>
 	<nav>
 		<ul>
-			<li><a href="#" id="full-portfolio-link" class="test">Full Portfolio</a></li>
+			<!--<li><a href="#" id="full-portfolio-link" class="test">Full Portfolio</a></li>-->
 			<li><a href="John-Harding-Resume.html">Resum&#233;</a>
 				<ul class="sub-resume">
 					<li><a href="John-Harding-Resume.html">HTML</a></li>
@@ -48,27 +48,14 @@
 		</ul>
 	</nav>
 </header>
-<section class="jh-section highlight-section">
+<section class="jh-section highlight-section paralax-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div class="outer-exp-display">
-					<h1>Front End Developer</h1>
-					<h3><i class="fa fa-check-circle-o"></i> 7 Years Practical Experience</h3>
-					<h3><i class="fa fa-check-circle-o"></i> 1.75 Years Personal Work Experience</h3>
-					<h3><i class="fa fa-check-circle-o"></i> 8 Months Work Experience</h3>
+					<h1>Hey, I'm John Harding.</h1><h2>I'm a front end developer.</h2>
+					<a class="btn-blue btn-main" id="btn-main" href="#">View My Work</a>
 				</div>
-			</div>
-			<div class="col-md-6" id="highlight-images-outer">
-				<a href="#" id="highlight-images" class="test">
-					<img src="images/down-arrow.png" class="down-btn">
-					<img src="images/tool2.png" class="tool-image" alt="Portfolio">
-					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
-					<img src="images/highlight-screenshots/project3.png" alt="Project3 Preview">
-					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
-					<img src="images/highlight-screenshots/ck_comment.png" alt="Ck Comments Preview">
-					<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes Preview">
-				</a>
 			</div>
 		</div>
 	</div>
