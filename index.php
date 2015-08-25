@@ -102,7 +102,7 @@
 					starting, so it was sidelined. (Late Oct to Early November of 2014)
 				</p>
 				<p>
-					<a href="project4.php">Embark</a> was created in response to a friends idea that has since been put on hold.  I spent one night
+					<a href="project4.php">Embark</a> was created in response to a friend's idea that has since been put on hold.  I spent one night
 					(granted, it was the whole night) on the project. (May 2014)
 				</p>
 			</div>
