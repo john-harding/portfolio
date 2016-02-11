@@ -55,7 +55,7 @@
 		</ul>
 	</nav>
 </header>
-<section class="jh-section highlight-section paralax-bg">
+<section class="jh-section highlight-section stationary-bg">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -66,6 +66,7 @@
 			</div>
 		</div>
 	</div>
+	<img class="stationary-image" src="http://i.imgur.com/OGW3jVf.jpg" />
 </section>
 <section class="jh-section section-extra-padding section-hidden" id="section-0">
 	<div class="container" id="section-0-show">

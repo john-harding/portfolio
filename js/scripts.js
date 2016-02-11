@@ -1,8 +1,11 @@
 /* Copyright : John Harding Jr */
 (function() {
 
+	var scrollVars;
+	setTimeout(function(){document.getElementById("outer-exp-display").className = "outer-exp-display show";},10);
+	scrollVars = setScrollVars();
 	window.onload = function() {
-		document.getElementById("outer-exp-display").className = "outer-exp-display show";
+		scrollVars = setScrollVars();
 	}
 	// array of all sections that will pop up and gain opacity on scroll by
 	// format : [section ID, is it currently visible?, marginTop to start at when popping up,should this pop up?,increase opacity amount for every iteration]
@@ -22,6 +25,7 @@
 		returnDoc = getDocInfo();
 		docHeight = returnDoc[0];
 		docInnerHt = returnDoc[1];
+		scrollVars = setScrollVars();
 	}
 	window.onscroll = function () {
 
@@ -78,26 +82,35 @@
 		}
 	};
 
-	function scrollToPortfolio()
+	function setScrollVars ()
 	{
-		
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
 		var portObj = document.getElementById("section-0");
 		var elemHeight = portObj.getBoundingClientRect().top;
-		var goToPos = elemHeight + currentPos - 65; // height of top header bar
-		var increment = 30;
+		return {
+			goToPos : (elemHeight + currentPos - 65) // 65 is height of top header bar
+		};
+		// var portObj = document.getElementById("section-0");
+		// var elemHeight = portObj.getBoundingClientRect().top;
+		// var goToPos = elemHeight + currentPos - 65; // height of top header bar
+	};
 
-		if((currentPos + increment) < goToPos)
+	function scrollToPortfolio(currentPos)
+	{
+		//console.log(currentPos);
+		var increment = 25;
+
+		if((currentPos + increment) < scrollVars.goToPos)
 		{
 			window.scrollTo( 0 , currentPos + increment );
-			setTimeout(function(){scrollToPortfolio();},25);
+			setTimeout(function(){scrollToPortfolio(currentPos + increment);},10);
 		} else {
-			window.scrollTo( 0 , goToPos );
+			window.scrollTo( 0 , scrollVars.goToPos );
 		}
 	}
 	//document.getElementById("highlight-images").onclick = function(event){event.preventDefault();scrollToPortfolio();};
 	//document.getElementById("full-portfolio-link").onclick = function(event){event.preventDefault();scrollToPortfolio();};
-	document.getElementById("btn-main").onclick = function(event){event.preventDefault();scrollToPortfolio();};
+	document.getElementById("btn-main").onclick = function(event){event.preventDefault();scrollToPortfolio(document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop);};
 
 /*	// this shows the portfolio images one by one
 	window.onload = function() {

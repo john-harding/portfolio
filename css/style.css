@@ -233,6 +233,7 @@ body.body-main header nav ul li:hover .sub-resume {
 }
 body.body-main .jh-section {
   padding: 95px 0;
+  background: #FFF;
 }
 @media screen and (max-width: 1250px) {
   body.body-main .jh-section .row > div > img {
@@ -516,11 +517,17 @@ body.body-main .jh-section.jh-section-short h2 {
 }
 body.body-main .jh-section.highlight-section {
   height: 800px;
-  background: #000;
-  background: url('http://i.imgur.com/OGW3jVf.jpg');
-  background-size: cover;
+  background: transparent;
   text-align: left;
   overflow: hidden;
+}
+body.body-main .jh-section.highlight-section img.stationary-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 800px;
+  z-index: -1;
 }
 @media screen and (max-width: 1300px) {
   body.body-main .jh-section.highlight-section {

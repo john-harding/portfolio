@@ -259,6 +259,7 @@ body.body-main {
 
 	.jh-section {
 		padding:95px 0;
+		background: #FFF;
 
 		@media screen and (max-width:1250px)
 		{
@@ -562,17 +563,26 @@ body.body-main {
 				margin:0;
 			}
 			h2 {
-				margin:7px 0 17px;
-				line-height:40px;
+				margin: 7px 0 17px;
+				line-height: 40px;
 			}
 		}
 		&.highlight-section {
-			height:800px;
-			background:#000;
-			background:url('http://i.imgur.com/OGW3jVf.jpg');//linear-gradient( rgba(0, 20, 40, 0.3), rgba(0, 20, 40, 0.3) ),url('../images/nyc.jpg');//url('http://i.imgur.com/ybS9wkr.jpg');//url('https://upload.wikimedia.org/wikipedia/commons/2/22/New_York_City_at_night_HDR.jpg');
-			background-size:cover;
+			height: 800px;
+			background: transparent;
+		//	background:url('');//linear-gradient( rgba(0, 20, 40, 0.3), rgba(0, 20, 40, 0.3) ),url('../images/nyc.jpg');//url('http://i.imgur.com/ybS9wkr.jpg');//url('https://upload.wikimedia.org/wikipedia/commons/2/22/New_York_City_at_night_HDR.jpg');
+		//	background-size:cover;
 			text-align:left;
 			overflow:hidden;
+
+			img.stationary-image {
+				position: fixed;
+				top: 0;
+				left: 0;
+				min-width: 100%;
+				min-height: 800px;
+				z-index: -1;
+			}
 
 			@media screen and (max-width:1300px)
 			{
