@@ -103,7 +103,7 @@
 				<img src="images/highlight-screenshots/highlight-two.png" alt="Short Lived Projects">
 			</div>
 			<div class="col-md-6">
-				<h1>Short Lived Side Projects</h1>
+				<h1>Short-Lived Side Projects</h1>
 				<h2>Unfinished projects, but I like to think they look nice.</h2>
 				<p>
 					<a href="comment/">CommentKing</a> was started when I began applying for jobs in late 2014.  I took a job with Qualtrics one to two weeks after
