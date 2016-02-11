@@ -123,10 +123,10 @@
 			<div class="col-md-6">
 			<h1>Portfolios</h1>
 			<h2>These are the two portfolios I created to display my work and strengths.</h2>
-			<p>
+			<!-- <p>
 				See my old portfolio <a href="http://www.servehappy.com/" target="_blank">here<span class="link-external-blue"></span></a>.  I created it in October 2014 before I started 
 				applying for jobs.
-			</p>
+			</p> -->
 			<p>
 				You are viewing my current portfolio now!
 			</p>
@@ -201,12 +201,12 @@
 					<img src="images/highlight-screenshots/portfolio_micro.png" alt="Umiami Micro'Canes">
 				</a>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-lg-4">
+		<!-- 	<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="http://www.servehappy.com" target="_blank">
 					<span>Old Portfolio<span class="link-external-blue"></span></span>
 					<img src="images/highlight-screenshots/portfolio.png" alt="Old Portfolio Preview">
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
