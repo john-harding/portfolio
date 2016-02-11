@@ -27,7 +27,7 @@
 <div class="ex-page-descr">A new social network I have created.  Follow users and categories.  Post in categories.</div>
 </div>
 <ul>
-	<li><a href="/project4.php" class="direction-btn">Previous</a><a href="/comment/" class="direction-btn">Next</a></li>
+	<li><a href="/project4.php" class="direction-btn">Previous</a><a href="/React/timer-multiple.php" class="direction-btn">Next</a></li>
 	<li><a href="/">Portfolio Home</a></li>
 	<li><a href="http://www.repfive.com/john" target="_blank">RepFive.com/john<span class="link_external"></span></a></li>
 </ul>

@@ -1,12 +1,12 @@
 body {
   margin: 0;
 }
-body * {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-}
 body section {
   padding: 55px 0;
+}
+body section * {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
 }
 body section h1 {
   font-family: Arial, sans-serif;

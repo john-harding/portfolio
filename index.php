@@ -159,6 +159,24 @@
 					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 				</a>
 			</div>
+			<div class="col-sm-6 col-lg-4">
+				<a class="outer-portfolio-image" href="https://www.qualtrics.com/financial-services" target="_blank">
+					<span>Qualtrics - Industry Pages</span>
+					<img src="images/highlight-screenshots/qualtrics-industry.png" alt="Qualtrics - Industry Pages">
+				</a>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<a class="outer-portfolio-image" href="https://support.qualtrics.com/" target="_blank">
+					<span>Qualtrics - Support Nav &amp; JS</span>
+					<img src="images/highlight-screenshots/qualtrics-support.png" alt="Qualtrics - Support Navigation Pane &amp; JavaScript (including Angular)">
+				</a>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<a class="outer-portfolio-image" href="React/timer-multiple.php">
+					<span>React JS Timer App</span>
+					<img src="images/highlight-screenshots/react.png" alt="React JS Timer Application">
+				</a>
+			</div>
 			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="">
 					<span>This Portfolio</span>
