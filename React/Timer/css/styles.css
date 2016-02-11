@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+body * {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+body section {
+  padding: 55px 0;
+}
+body section h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: 100;
+  text-align: center;
+}
+body section .timer-app {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+body section .timer-app > button {
+  margin-left: 20px;
+  margin-bottom: 25px;
+  padding: 8px 15px;
+  background: #fff;
+  font-size: 1.2em;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+body section .timer-app > button:hover {
+  background: #F0F0F0;
+}
+body section .timer-app > button:focus {
+  outline: 0;
+}
+body section .timer-app > button.selected {
+  border-bottom-color: #0AF;
+}
+body section .timer-app > button:first-child {
+  margin-left: 0;
+}
+body section .timer-app .timer-wrapper .timer-outer {
+  display: none;
+}
+body section .timer-app .timer-wrapper .timer-outer.show {
+  display: block;
+}
+body section .timer-app .timer-wrapper .timer-outer .button-wrapper {
+  margin-top: 25px;
+}
+body section .timer-app .timer-wrapper .timer-outer p {
+  margin-top: 25px;
+}
+body section .timer-app .timer-wrapper .timer-outer .time-label {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+body section .timer-app .timer-wrapper .timer-outer button {
+  margin-left: 15px;
+  padding: 8px 16px;
+  background: #EEE;
+  border: 1px #ccc solid;
+}
+body section .timer-app .timer-wrapper .timer-outer button:hover {
+  color: #FFF;
+  background: #0AF;
+  border-color: #0AF;
+}
+body section .timer-app .timer-wrapper .timer-outer button:focus {
+  outline: 0;
+}
+body section .timer-app .timer-wrapper .timer-outer button:first-child {
+  margin-left: 0;
+}

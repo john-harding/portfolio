@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/JSXTransformer.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/react.js"></script>
+    <script type="text/jsx" src="Timer/scripts.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+  </body>
+</html>
