@@ -11,16 +11,11 @@ var IncrementTimer = React.createClass({
 		};
 	},
 
-	componentDidMount: function() {
-		// this.StartTimer(true);
-	},
-
 	componentWillUnmount: function() {
 		this.StopTimer();
 	},
 
 	AddTime: function() {
-		// console.log("AddTime");
 		this.setState( { elapsed: this.state.elapsed + this.state.increment } );
 		this.StartTimer(false);
 	},
@@ -52,12 +47,6 @@ var IncrementTimer = React.createClass({
 		// console.log("rendered");
 		var elapsed = this.state.elapsed / 1000;
 
-		// This will give a number with one digit after the decimal dot (xx.x):
-		// var seconds = (elapsed / 10).toFixed(1);
-
-		// Although we return an entire <p> element, react will smartly update
-		// only the changed parts, which contain the seconds variable.
-
 		return (
 			<div className={"timer-outer " + this.props.class}>
 				<button onClick={this.ToggleTimer}>{ !this.state.live ? "Start" : "Stop" }</button>
@@ -73,14 +62,11 @@ var DecrementTimer = React.createClass({
 
 	getInitialState: function(){
 		return {
-			initialTime: this.props.begin, // value will always equal the input
-			elapsed: this.props.begin * 1000, // value will change
+			initialTime: this.props.begin, // this value will always equal the input
+			elapsed: this.props.begin * 1000, // this value will change
 			decrement: this.props.decrement * 1000,
 			live: false
 		};
-	},
-
-	componentDidMount: function() {
 	},
 
 	componentWillUnmount: function() {
