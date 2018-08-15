@@ -14,6 +14,7 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="icon" href="images/icon_small.ico">
+
 <?php
  if($_SERVER['HTTP_HOST'] != 'localhost'):
 ?>
@@ -31,6 +32,7 @@
 <?php
  endif;
 ?>
+
  <!-- HTML5 Shim and Respond.js -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -60,7 +62,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="outer-exp-display" id="outer-exp-display">
-					<h1>Hey, I'm John Harding.</h1><h2>I'm a front end developer.</h2>
+					<h1>Hey, I'm John Harding.</h1><h2>I'm a front end/full stack developer.</h2>
 					<a class="btn-blue btn-main" id="btn-main" href="#">View My Work</a>
 				</div>
 			</div>
@@ -68,7 +70,37 @@
 	</div>
 	<img class="stationary-image" src="http://i.imgur.com/OGW3jVf.jpg" />
 </section>
-<section class="jh-section section-extra-padding section-hidden" id="section-0">
+<section class="jh-section section-extra-padding section-hidden" id="section-fg">
+	<div class="container" id="section-fg-show">
+		<div class="row">
+			<div class="col-md-6">
+				<img class="display-img-2" src="images/screen_formofgood.png" alt="RepFive">
+			</div>
+			<div class="col-md-6">
+				<h1>Social media site for average users and coders.</h1>
+				<h2>Used React, Redux, SCSS, Node, Express, MySQL, and all hosted on AWS</h2>
+				<p>
+					In August 2017, I began work on <strong>Form of Good</strong>, a startup that allows users to create posts 
+					with the option of editing the HTML and JavaScript.  This was an arduous task, as there are many 
+					potential security pitfalls I had to be wary of.  It is still a work in progress.
+				</p>
+				<p>
+					I have done 99.9% of the project, and based it on the MERN starter repo.
+				</p>
+				<p>
+					AWS usage includes Route 53, S3, AWS RDS, Elastic Beanstalk, AWS SES, and Lambda.  I would still consider myself fairly 
+					junior at using AWS, but I have gained a significant amount of knowledge.  This portfolio is also hosted on 
+					AWS (using beanstalk).
+				</p>
+				<br />
+				<p class="no-margin">
+					<a class="btn-blue" href="https://www.formofgood.com" target="_blank"><strong>Formofgood.com <span class="link-external-blue external-white"></span></strong></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="jh-section jh-section-grey section-extra-padding section-hidden" id="section-0">
 	<div class="container" id="section-0-show">
 		<div class="row">
 			<div class="col-md-6">
@@ -79,9 +111,10 @@
 					or the category it was posted in.  I moved on from this project in November of 2014 when I accepted a position with Qualtrics.
 				</p>
 				<p class="p-new-repfive">
-					<span>Preview the most recent version:</span><br />
+					<span>Check out how it looked:</span><br />
 					<a href="repfive_index.php"><strong>Improved Feed</strong></a><a href="signup.php"><strong>New Signup Page</strong></a><a href="developer.php"><strong>New Developer Page</strong></a>
 				</p>
+<!-- removed because site is no longer up for now
 				<p class="no-margin">
 					<a class="btn-blue" href="http://www.repfive.com/login.php" target="_blank"><strong>Current Version <span class="link-external-blue external-white"></span></strong></a>
 					<span class="r5-login-info">
@@ -89,6 +122,7 @@
 						<span>Password: <strong>repfive</strong></span>
 					</span>
 				</p>
+-->
 			</div>
 			<div class="col-md-6">
 				<img class="display-img" src="images/screen_repfive.png" alt="RepFive">
@@ -96,7 +130,7 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section jh-section-grey jh-section-short section-extra-padding section-hidden" id="section-1">
+<section class="jh-section jh-section-short section-extra-padding section-hidden" id="section-1">
 	<div class="container" id="section-1-show">
 		<div class="row">
 			<div class="col-md-6">
@@ -117,7 +151,7 @@
 		</div>
 	</div>
 </section>
-<section class="jh-section section-extra-padding section-no-padding-bottom" id="section-2">
+<section class="jh-section jh-section-grey section-extra-padding section-no-padding-bottom" id="section-2">
 	<div class="container" id="section-2-show">
 		<div class="row">
 			<div class="col-md-6">
@@ -153,32 +187,38 @@
 			</div>
 		</div>
 		<div class="row portfolio-images">
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<a class="outer-portfolio-image" href="https://www.formofgood.com" target="_blank">
+					<span>Form of Good<span class="link-external-blue"></span></span>
+					<img src="images/highlight-screenshots/formofgood.png" alt="Form of Good">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="repfive_index.php">
 					<span>RepFive</span>
 					<img src="images/highlight-screenshots/repfive.png" alt="Repfive Preview">
 				</a>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="https://www.qualtrics.com/financial-services" target="_blank">
-					<span>Qualtrics - Industry Pages</span>
+					<span>Qualtrics - Industry Pages<span class="link-external-blue"></span></span>
 					<img src="images/highlight-screenshots/qualtrics-industry.png" alt="Qualtrics - Industry Pages">
 				</a>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="https://support.qualtrics.com/" target="_blank">
-					<span>Qualtrics - Support Nav &amp; JS</span>
+					<span>Qualtrics - Support Nav &amp; JS<span class="link-external-blue"></span></span>
 					<img src="images/highlight-screenshots/qualtrics-support.png" alt="Qualtrics - Support Navigation Pane &amp; JavaScript (including Angular)">
 				</a>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<a class="outer-portfolio-image" href="React/timer-multiple.php">
 					<span>React JS Timer App</span>
 					<img src="images/highlight-screenshots/react.png" alt="React JS Timer Application">
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-lg-4">
-				<a class="outer-portfolio-image" href="">
+				<a class="outer-portfolio-image" href="/">
 					<span>This Portfolio</span>
 					<img src="images/highlight-screenshots/new-portfolio.png" alt="Old Portfolio Preview">
 				</a>

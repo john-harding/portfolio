@@ -9,7 +9,7 @@
 	}
 	// array of all sections that will pop up and gain opacity on scroll by
 	// format : [section ID, is it currently visible?, marginTop to start at when popping up,should this pop up?,increase opacity amount for every iteration]
-	var sectionList = [["section-0",false,120,true,.02],["section-1",false,200,false,.015],["section-2",false,300,true,1]];
+	var sectionList = [["section-fg",false,120,true,.02],["section-0",false,120,true,.02],["section-1",false,200,false,.015],["section-2",false,300,true,1]];
 	var sectionEnabled = true;
 
 	var jshHighlightHt = document.getElementsByClassName("highlight-section")[0].offsetHeight; // get height of highlight section
