@@ -45,7 +45,7 @@
 	<nav>
 		<ul>
 			<!--<li><a href="#" id="full-portfolio-link" class="test">Full Portfolio</a></li>-->
-			<li><a href="John-Harding-Resume.html">Resum&#233;</a>
+			<li><a href="John-Harding-Resume.html">Resume</a>
 				<ul class="sub-resume">
 					<li><a href="John-Harding-Resume.html">HTML</a></li>
 					<li><a href="John-Harding-Resume.docx">Word Document</a></li>
