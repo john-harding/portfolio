@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/style.css?v=1.0.1" type="text/css">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -52,7 +52,7 @@
 					<li><a href="John-Harding-Resume.pdf">PDF</a></li>
 				</ul>
 			</li>
-			<li><a href="http://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverflow <span class="link-external-blue"></span></a></li>
+			<li><a href="https://stackoverflow.com/users/4792461/john-harding" target="_blank">Stackoverflow <span class="link-external-blue"></span></a></li>
 			<li><a href="https://github.com/john-harding" target="_blank">Github <span class="link-external-blue"></span></a></li>
 		</ul>
 	</nav>
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 	</div>
-	<img class="stationary-image" src="http://i.imgur.com/OGW3jVf.jpg" />
+	<img class="stationary-image" src="https://i.imgur.com/OGW3jVf.jpg" />
 </section>
 <section class="jh-section section-extra-padding section-hidden" id="section-fg">
 	<div class="container" id="section-fg-show">
