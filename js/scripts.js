@@ -35,10 +35,8 @@
 
 
 		// loop through each of the sections we are going to pop up ** may want to splice off sections that have already been popped up
-		if(sectionEnabled)
-		{
-			for(var i = 0;i < sectionList.length;i++)
-			{
+		if(sectionEnabled) {
+			for(var i = 0;i < sectionList.length;i++) {
 				tempSectionVisible = (tempSectionVisible && sectionList[i][1]) ? true : false;
 				//window.console.log(i);
 				var tempObj = document.getElementById(sectionList[i][0]);// get the element we are using to determine when to pop up
@@ -57,35 +55,30 @@
 			}
 			sectionEnabled = !tempSectionVisible;
 		}
-		for(var i2=0;i2 < paralax.length;i2++)
-		{
+		for(var i2=0;i2 < paralax.length;i2++) {
 			var tempTop2 = paralax[i2].getBoundingClientRect().top;
-			if(tempTop2 <= (docInnerHt))
-			{
+			if(tempTop2 <= (docInnerHt)) {
 				paralax[i2].style.backgroundPositionY = (-Math.round((tempTop2)/1.5))+"px";
 			}
 		}
 
-		if(currentPos > 0 && currentPos < (jshHighlightHt - jshTopBarHt))
-		{
+		if(currentPos > 0 && currentPos < (jshHighlightHt - jshTopBarHt)) {
 			document.getElementById("jh-top").className = "jh-top-light";
 		} else
-		if(currentPos >= (jshHighlightHt - jshTopBarHt))
-		 {
+		if(currentPos >= (jshHighlightHt - jshTopBarHt)) {
 			document.getElementById("jh-top").className = "jh-top-dark";
 		
 		} else
-		if(currentPos == 0)
-		 {
+		if(currentPos == 0) {
 			document.getElementById("jh-top").className = "";
 		
 		}
 	};
 
-	function setScrollVars ()
+	function setScrollVars()
 	{
 		var currentPos = document.body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
-		var portObj = document.getElementById("section-0");
+		var portObj = document.getElementById("section-fg");
 		var elemHeight = portObj.getBoundingClientRect().top;
 		return {
 			goToPos : (elemHeight + currentPos - 65) // 65 is height of top header bar
@@ -100,12 +93,11 @@
 		//console.log(currentPos);
 		var increment = 25;
 
-		if((currentPos + increment) < scrollVars.goToPos)
-		{
-			window.scrollTo( 0 , currentPos + increment );
+		if((currentPos + increment) < scrollVars.goToPos) {
+			window.scrollTo(0 , currentPos + increment );
 			setTimeout(function(){scrollToPortfolio(currentPos + increment);},10);
 		} else {
-			window.scrollTo( 0 , scrollVars.goToPos );
+			window.scrollTo(0 , scrollVars.goToPos );
 		}
 	}
 	//document.getElementById("highlight-images").onclick = function(event){event.preventDefault();scrollToPortfolio();};
@@ -125,8 +117,7 @@
 			[170,170],
 			[185,185]
 		];
-		for(var i = children.length-1; i >= 0; i--)
-		{
+		for(var i = children.length-1; i >= 0; i--) {
 			children[i].style.top = elemPositions[i][1]+"px";
 			children[i].style.left = elemPositions[i][0]+"px";
 			children[i].style.zIndex = Math.abs(i-6);
@@ -151,8 +142,7 @@
 		start = start <= 1 ? start : 1;
 		obj.style.opacity = start;
 		obj.style.filter = "Alpha(opacity=" + ( start * 100 ) + ")";
-		if(start < 1)
-		{
+		if(start < 1) {
 			var t2 = setTimeout(closure(obj,start,"easeShow",amt),12);
 		}
 	};
@@ -163,19 +153,16 @@
 		start = start >= 0 ? start : 0;
 		obj.style.marginTop = start + "px";
 		obj.style.marginBottom = "-" + start + "px";
-		if(start > 0)
-		{
+		if(start > 0) {
 			var t2 = setTimeout(closure(obj,start,"easeUp"),8);
 		}
 	};
 
 	var closure = function(child,start,type,amt) {
-		if(type == "easeShow")
-		{
+		if(type == "easeShow") {
 			return function(){easeShow(child,start,amt);};
 		} else 
-		if(type == "easeUp")
-		{
+		if(type == "easeUp") {
 			return function(){easeUp(child,start,amt);};
 		}
 	};
