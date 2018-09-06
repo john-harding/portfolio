@@ -82,7 +82,7 @@
 				<p>
 					In August 2017, I began work on <strong>Form of Good</strong>, a startup that allows users to create posts 
 					with the option of editing the HTML and JavaScript.  This was an arduous task, as there are many 
-					potential security pitfalls I had to be wary of.  It is still a work in progress.
+					potential security pitfalls I had to be wary of.
 				</p>
 				<p>
 					I have done 99.9% of the project, and based it on the MERN starter repo.
