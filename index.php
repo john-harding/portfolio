@@ -62,7 +62,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="outer-exp-display" id="outer-exp-display">
-					<h1>Hey, I'm John Harding.</h1><h2>I'm a front end/full stack developer.</h2>
+					<h1>Hey, I'm John Harding.</h1><h2>I'm a front end developer.</h2>
 					<a class="btn-blue btn-main" id="btn-main" href="#">View My Work</a>
 				</div>
 			</div>
