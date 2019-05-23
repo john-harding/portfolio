@@ -80,12 +80,12 @@
 				<h1>Social media site for average users and coders.</h1>
 				<h2>Used React, Redux, SCSS, Node, Express, MySQL, and all hosted on AWS</h2>
 				<p>
-					In August 2017, I began work on <strong>Form of Good</strong>, a startup that allows users to create posts 
+					In August 2017, I began work on <strong>Knowledge.sexy</strong> (previously known as <strong>Form of Good</strong>), a startup that allows users to create posts 
 					with the option of editing the HTML and JavaScript.  This was an arduous task, as there are many 
 					potential security pitfalls I had to be wary of.
 				</p>
 				<p>
-					I have done 99.9% of the project, and based it on the MERN starter repo.
+					I have done 99.99% of the project, and based it on the MERN starter repo.
 				</p>
 				<p>
 					AWS usage includes Route 53, S3, AWS RDS, Elastic Beanstalk, AWS SES, and Lambda.  I would still consider myself fairly 
@@ -94,7 +94,7 @@
 				</p>
 				<br />
 				<p class="no-margin">
-					<a class="btn-blue" href="https://www.formofgood.com" target="_blank"><strong>Formofgood.com <span class="link-external-blue external-white"></span></strong></a>
+					<a class="btn-blue" href="https://knowledge.sexy" target="_blank"><strong>Knowledge.sexy <span class="link-external-blue external-white"></span></strong></a>
 				</p>
 			</div>
 		</div>
